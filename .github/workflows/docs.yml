@@ -1,0 +1,70 @@
+name: Build & Deploy Docs
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout docs repo
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Install DocFX
+        run: dotnet tool update -g docfx
+
+      - name: Checkout private code repo (for API extraction)
+        uses: actions/checkout@v4
+        with:
+          repository: stsw133/StswExpress
+          token: ${{ secrets.PRIVATE_REPO_PAT }}
+          path: _private_src
+
+      - name: Build private repo (Release)
+        run: dotnet build _private_src -c Release
+
+      - name: Collect API binaries and XML
+        run: |
+          mkdir -p _private_api
+
+          for A in StswExpress.Commons StswExpress.Wpf StswExpress.Avalonia; do
+            DLL=$(find _private_src -type f -path "*/bin/Release/*/${A}.dll" | head -n 1)
+            XML=$(find _private_src -type f -path "*/bin/Release/*/${A}.xml" | head -n 1)
+
+            if [ -n "$DLL" ]; then cp "$DLL" _private_api/; fi
+            if [ -n "$XML" ]; then cp "$XML" _private_api/; fi
+          done
+
+          echo "Collected files:"
+          ls -la _private_api
+
+      - name: Build docs site
+        run: docfx docfx.json
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
