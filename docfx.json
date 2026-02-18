@@ -13,7 +13,7 @@
   ],
   "build": {
     "content": [
-      { "files": [ "index.md", "toc.yml", "articles/**.md", "articles/toc.yml" ] },
+      { "files": [ "index.md", "toc.yml", "articles/**/*.md", "articles/toc.yml" ] }
       { "files": [ "api/**.yml" ] }
     ],
     "resource": [

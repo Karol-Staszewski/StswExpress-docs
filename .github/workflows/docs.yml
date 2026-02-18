@@ -1,17 +1,25 @@
-name: Build & Deploy Docs
+name: Build & Deploy Versioned Docs
 
 on:
   push:
     branches: [ "main" ]
+
   workflow_dispatch:
+    inputs:
+      ref:
+        description: "Git ref in private repo (tag/branch/commit), e.g. v0.22.0"
+        required: false
+        default: "main"
+      version:
+        description: "Version folder name, e.g. 0.22.0"
+        required: false
+        default: ""
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: "pages"
+  group: "docs"
   cancel-in-progress: true
 
 jobs:
@@ -21,6 +29,8 @@ jobs:
     steps:
       - name: Checkout docs repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -36,6 +46,7 @@ jobs:
           repository: stsw133/StswExpress
           token: ${{ secrets.PRIVATE_REPO_PAT }}
           path: _private_src
+          ref: ${{ github.event.inputs.ref || 'main' }}
 
       - name: Build private repo (Release)
         run: dotnet build _private_src -c Release
@@ -45,32 +56,57 @@ jobs:
         run: |
           New-Item -ItemType Directory -Force -Path _private_api | Out-Null
 
-          $assemblies = @(
-            "StswExpress.Commons",
-            "StswExpress.Wpf"
-          )
+          $assemblies = @("StswExpress.Commons","StswExpress.Wpf","StswExpress.Avalonia")
 
           foreach ($a in $assemblies) {
             $dll = Get-ChildItem -Path _private_src -Recurse -Filter "$a.dll" | Where-Object { $_.FullName -match "\\bin\\Release\\" } | Select-Object -First 1
             $xml = Get-ChildItem -Path _private_src -Recurse -Filter "$a.xml" | Where-Object { $_.FullName -match "\\bin\\Release\\" } | Select-Object -First 1
-
             if ($dll) { Copy-Item $dll.FullName -Destination _private_api -Force }
             if ($xml) { Copy-Item $xml.FullName -Destination _private_api -Force }
           }
 
           Write-Host "Collected files:"
-          Get-ChildItem _private_api
+          Get-ChildItem _private_api | Format-Table Name,Length
 
       - name: Build docs site
         run: docfx docfx.json
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+      - name: Prepare publish folders
+        shell: pwsh
+        run: |
+          $version = "${{ github.event.inputs.version }}"
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+          New-Item -ItemType Directory -Force -Path publish | Out-Null
+
+          if ([string]::IsNullOrWhiteSpace($version)) {
+            # publish only latest (for main)
+            if (Test-Path "publish/latest") { Remove-Item -Recurse -Force "publish/latest" }
+            Move-Item -Path "_site" -Destination "publish/latest"
+
+          } else {
+            # publish version + also update latest
+            $vPath = "publish/v/$version"
+            if (Test-Path $vPath) { Remove-Item -Recurse -Force $vPath }
+            New-Item -ItemType Directory -Force -Path "publish/v" | Out-Null
+            Move-Item -Path "_site" -Destination $vPath
+
+            if (Test-Path "publish/latest") { Remove-Item -Recurse -Force "publish/latest" }
+            Copy-Item -Recurse -Force $vPath "publish/latest"
+          }
+
+          # redirect from root to /latest/
+          @"
+          <!doctype html>
+          <meta http-equiv="refresh" content="0; url=latest/">
+          <title>Redirecting…</title>
+          <a href="latest/">Go to latest</a>
+          "@ | Out-File -Encoding utf8 "publish/index.html"
+
+      - name: Deploy to gh-pages (keep old versions)
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: _site
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: publish
+          keep_files: true
+          force_orphan: false
