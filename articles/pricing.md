@@ -8,7 +8,7 @@ The current pricing follows a **Founders Pricing** approach to support early ado
 
 ## 🚀 Individual License (Founders)
 
-**€39 / year**
+**€49 / year**
 
 For single developers and freelancers.
 

@@ -43,7 +43,7 @@ jobs:
       - name: Checkout private code repo (for API extraction)
         uses: actions/checkout@v4
         with:
-          repository: stsw133/StswExpress
+          repository: Karol-Staszewski/StswExpress
           token: ${{ secrets.PRIVATE_REPO_PAT }}
           path: _private_src
           ref: ${{ github.event.inputs.ref || 'main' }}
