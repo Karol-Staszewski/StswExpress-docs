@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>StswDataGrid Tutorial (WPF) </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="StswDataGrid Tutorial (WPF) ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="stswdatagrid-tutorial-wpf">StswDataGrid Tutorial (WPF)</h1>
+
+<blockquote>
+<p>This tutorial shows how to properly configure <code>StswDataGrid</code>, use <code>StswDataGridFilterBox</code> in column headers (preferably with Stsw columns), and add <code>StswDataGridStatusColumn</code> based on patterns used in <strong>StswExpress.Wpf</strong> and <strong>TestApp.Wpf</strong>.</p>
+</blockquote>
+<h2 id="screenshot-placeholder">Screenshot placeholder</h2>
+<p>Add your final screenshot here after configuring the grid:</p>
+<pre><code class="lang-md">![Configured StswDataGrid](./path-to-your-screenshot.png)
+</code></pre>
+<hr>
+<h2 id="1-when-to-use-stswdatagrid">1) When to use <code>StswDataGrid</code></h2>
+<p>Use <code>StswDataGrid</code> when you need:</p>
+<ul>
+<li>built-in filtering support,</li>
+<li>convenient custom column types (<code>StswDataGridTextColumn</code>, <code>StswDataGridDecimalColumn</code>, etc.),</li>
+<li>optional SQL filter generation,</li>
+<li>row state + row details integration via status column.</li>
+</ul>
+<p>A basic setup in XAML:</p>
+<pre><code class="lang-xml">&lt;se:StswDataGrid ItemsSource=&quot;{Binding Items}&quot;&gt;
+    &lt;se:StswDataGrid.Columns&gt;
+        &lt;se:StswDataGridStatusColumn/&gt;
+
+        &lt;se:StswDataGridDecimalColumn Binding=&quot;{Binding Id}&quot; Width=&quot;100&quot;&gt;
+            &lt;se:StswDataGridDecimalColumn.Header&gt;
+                &lt;se:StswDataGridFilterBox Header=&quot;ID&quot; FilterType=&quot;Number&quot; FilterMode=&quot;Equal&quot; FilterValuePath=&quot;Id&quot;/&gt;
+            &lt;/se:StswDataGridDecimalColumn.Header&gt;
+        &lt;/se:StswDataGridDecimalColumn&gt;
+
+        &lt;se:StswDataGridTextColumn Binding=&quot;{Binding Name}&quot; Width=&quot;200&quot;&gt;
+            &lt;se:StswDataGridTextColumn.Header&gt;
+                &lt;se:StswDataGridFilterBox Header=&quot;Name&quot; FilterType=&quot;Text&quot; FilterMode=&quot;Contains&quot; FilterValuePath=&quot;Name&quot;/&gt;
+            &lt;/se:StswDataGridTextColumn.Header&gt;
+        &lt;/se:StswDataGridTextColumn&gt;
+    &lt;/se:StswDataGrid.Columns&gt;
+&lt;/se:StswDataGrid&gt;
+</code></pre>
+<hr>
+<h2 id="2-recommended-pattern-stswdatagridfilterbox-in-stsw-column-headers">2) Recommended pattern: <code>StswDataGridFilterBox</code> in Stsw column headers</h2>
+<p>The recommended pattern is:</p>
+<ol>
+<li>Use <strong>Stsw columns</strong> (<code>StswDataGridTextColumn</code>, <code>StswDataGridDecimalColumn</code>, <code>StswDataGridDateColumn</code>, <code>StswDataGridCheckColumn</code>, <code>StswDataGridComboColumn</code>) whenever possible.</li>
+<li>Put <code>StswDataGridFilterBox</code> in each column header.</li>
+<li>Match <code>FilterType</code> to data type and set <code>FilterValuePath</code> to the field/property name used for filtering.</li>
+</ol>
+<h3 id="example-by-data-type">Example by data type</h3>
+<pre><code class="lang-xml">&lt;!-- Number --&gt;
+&lt;se:StswDataGridDecimalColumn Binding=&quot;{Binding Id}&quot;&gt;
+    &lt;se:StswDataGridDecimalColumn.Header&gt;
+        &lt;se:StswDataGridFilterBox Header=&quot;ID&quot; FilterType=&quot;Number&quot; FilterMode=&quot;Equal&quot; FilterValuePath=&quot;Id&quot;/&gt;
+    &lt;/se:StswDataGridDecimalColumn.Header&gt;
+&lt;/se:StswDataGridDecimalColumn&gt;
+
+&lt;!-- Text --&gt;
+&lt;se:StswDataGridTextColumn Binding=&quot;{Binding Name}&quot;&gt;
+    &lt;se:StswDataGridTextColumn.Header&gt;
+        &lt;se:StswDataGridFilterBox Header=&quot;Name&quot; FilterType=&quot;Text&quot; FilterMode=&quot;Contains&quot; FilterValuePath=&quot;Name&quot;/&gt;
+    &lt;/se:StswDataGridTextColumn.Header&gt;
+&lt;/se:StswDataGridTextColumn&gt;
+
+&lt;!-- List / enum --&gt;
+&lt;se:StswDataGridComboColumn
+    DisplayMemberPath=&quot;Display&quot;
+    ItemsSource=&quot;{se:StswEnumToList local:ContractorType}&quot;
+    SelectedValueBinding=&quot;{Binding Type, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}&quot;
+    SelectedValuePath=&quot;Value&quot;&gt;
+    &lt;se:StswDataGridComboColumn.Header&gt;
+        &lt;se:StswDataGridFilterBox
+            Header=&quot;Type&quot;
+            FilterType=&quot;List&quot;
+            FilterMode=&quot;In&quot;
+            FilterValuePath=&quot;Type&quot;
+            ItemsSource=&quot;{se:StswEnumToList local:ContractorType}&quot;/&gt;
+    &lt;/se:StswDataGridComboColumn.Header&gt;
+&lt;/se:StswDataGridComboColumn&gt;
+
+&lt;!-- Boolean --&gt;
+&lt;se:StswDataGridCheckColumn Binding=&quot;{Binding IsArchival}&quot;&gt;
+    &lt;se:StswDataGridCheckColumn.Header&gt;
+        &lt;se:StswDataGridFilterBox Header=&quot;Is archival&quot; FilterType=&quot;Check&quot; FilterValuePath=&quot;IsArchival&quot; ApplyNullReplacement=&quot;True&quot;/&gt;
+    &lt;/se:StswDataGridCheckColumn.Header&gt;
+&lt;/se:StswDataGridCheckColumn&gt;
+
+&lt;!-- Date --&gt;
+&lt;se:StswDataGridDateColumn Binding=&quot;{Binding CreateDT, StringFormat='yyyy-MM-dd HH:mm'}&quot; Format=&quot;yyyy-MM-dd HH:mm&quot;&gt;
+    &lt;se:StswDataGridDateColumn.Header&gt;
+        &lt;se:StswDataGridFilterBox Header=&quot;CreateDT&quot; FilterType=&quot;Date&quot; FilterMode=&quot;GreaterEqual&quot; FilterValuePath=&quot;CreateDT&quot;/&gt;
+    &lt;/se:StswDataGridDateColumn.Header&gt;
+&lt;/se:StswDataGridDateColumn&gt;
+</code></pre>
+<h3 id="important-stswdatagridfilterbox-properties">Important <code>StswDataGridFilterBox</code> properties</h3>
+<ul>
+<li><code>Header</code>: text shown in the header.</li>
+<li><code>FilterType</code>: control/data type for filtering (<code>Text</code>, <code>Number</code>, <code>Date</code>, <code>Check</code>, <code>List</code>, etc.).</li>
+<li><code>FilterMode</code>: operator (<code>Equal</code>, <code>Contains</code>, <code>GreaterEqual</code>, <code>Between</code>, <code>In</code>, etc.).</li>
+<li><code>FilterValuePath</code>: source field/property used by filtering logic.</li>
+<li><code>ItemsSource</code>, <code>DisplayMemberPath</code>, <code>SelectedValuePath</code>: for list-based filters.</li>
+<li><code>ApplyCaseTransform</code>, <code>ApplyNullReplacement</code>, <code>Format</code>: optional behavior tweaks.</li>
+</ul>
+<hr>
+<h2 id="3-add-stswdatagridstatuscolumn">3) Add <code>StswDataGridStatusColumn</code></h2>
+<p>Add the status column as the <strong>first column</strong>:</p>
+<pre><code class="lang-xml">&lt;se:StswDataGrid.Columns&gt;
+    &lt;se:StswDataGridStatusColumn/&gt;
+    &lt;!-- other columns --&gt;
+&lt;/se:StswDataGrid.Columns&gt;
+</code></pre>
+<p>What it gives you:</p>
+<ul>
+<li>header actions for filter visibility and clear filters,</li>
+<li>row state indicator when row model supports tracking,</li>
+<li>row details toggle (expand/collapse) when row model supports details.</li>
+</ul>
+<h3 id="row-model-requirements-recommended">Row model requirements (recommended)</h3>
+<p>To fully benefit from the status column behavior, your row model should implement:</p>
+<ul>
+<li><code>IStswTrackableItem</code> (for <code>ItemState</code> indicator: added/modified/deleted/unchanged),</li>
+<li><code>IStswDetailedItem</code> (for <code>ShowDetails</code> toggle + row details behavior).</li>
+</ul>
+<p>Example model:</p>
+<pre><code class="lang-csharp">public partial class MyRowModel : StswObservableObject, IStswDetailedItem, IStswTrackableItem
+{
+    [StswObservableProperty] private int _id;
+    [StswObservableProperty] private string? _name;
+    [StswObservableProperty] private StswItemState _itemState;
+    [StswObservableProperty] private bool? _showDetails;
+}
+</code></pre>
+<p>And optional details template:</p>
+<pre><code class="lang-xml">&lt;se:StswDataGrid.RowDetailsTemplate&gt;
+    &lt;DataTemplate&gt;
+        &lt;StackPanel Margin=&quot;5&quot;&gt;
+            &lt;se:StswLabel Content=&quot;Row details...&quot; Margin=&quot;5&quot;/&gt;
+        &lt;/StackPanel&gt;
+    &lt;/DataTemplate&gt;
+&lt;/se:StswDataGrid.RowDetailsTemplate&gt;
+</code></pre>
+<hr>
+<h2 id="4-full-practical-example-in-one-place">4) Full practical example (in one place)</h2>
+<pre><code class="lang-xml">&lt;se:StswDataGrid FiltersData=&quot;{Binding Filters}&quot;
+                 FiltersType=&quot;CollectionView&quot;
+                 FrozenColumnCount=&quot;1&quot;
+                 ItemsSource=&quot;{Binding Items}&quot;
+                 SelectedItem=&quot;{Binding SelectedItem}&quot;&gt;
+
+    &lt;se:StswDataGrid.Columns&gt;
+        &lt;se:StswDataGridStatusColumn/&gt;
+
+        &lt;se:StswDataGridDecimalColumn Binding=&quot;{Binding Id}&quot; IsReadOnly=&quot;True&quot;&gt;
+            &lt;se:StswDataGridDecimalColumn.Header&gt;
+                &lt;se:StswDataGridFilterBox Header=&quot;ID&quot; FilterType=&quot;Number&quot; FilterMode=&quot;Equal&quot; FilterValuePath=&quot;Id&quot;/&gt;
+            &lt;/se:StswDataGridDecimalColumn.Header&gt;
+        &lt;/se:StswDataGridDecimalColumn&gt;
+
+        &lt;se:StswDataGridTextColumn Binding=&quot;{Binding Name}&quot;&gt;
+            &lt;se:StswDataGridTextColumn.Header&gt;
+                &lt;se:StswDataGridFilterBox Header=&quot;Name&quot; FilterType=&quot;Text&quot; FilterMode=&quot;Contains&quot; FilterValuePath=&quot;Name&quot;/&gt;
+            &lt;/se:StswDataGridTextColumn.Header&gt;
+        &lt;/se:StswDataGridTextColumn&gt;
+
+        &lt;se:StswDataGridCheckColumn Binding=&quot;{Binding IsArchival}&quot;&gt;
+            &lt;se:StswDataGridCheckColumn.Header&gt;
+                &lt;se:StswDataGridFilterBox Header=&quot;Is archival&quot; FilterType=&quot;Check&quot; FilterValuePath=&quot;IsArchival&quot; ApplyNullReplacement=&quot;True&quot;/&gt;
+            &lt;/se:StswDataGridCheckColumn.Header&gt;
+        &lt;/se:StswDataGridCheckColumn&gt;
+    &lt;/se:StswDataGrid.Columns&gt;
+
+    &lt;se:StswDataGrid.RowDetailsTemplate&gt;
+        &lt;DataTemplate&gt;
+            &lt;se:StswText Margin=&quot;3&quot; Text=&quot;There are some row details...&quot;/&gt;
+        &lt;/DataTemplate&gt;
+    &lt;/se:StswDataGrid.RowDetailsTemplate&gt;
+&lt;/se:StswDataGrid&gt;
+</code></pre>
+<hr>
+<h2 id="5-practical-checklist">5) Practical checklist</h2>
+<p>Before you finish, verify:</p>
+<ul>
+<li>[ ] <code>StswDataGridStatusColumn</code> is the first column.</li>
+<li>[ ] Every key column header uses <code>StswDataGridFilterBox</code>.</li>
+<li>[ ] <code>FilterType</code> and <code>FilterMode</code> match the data type.</li>
+<li>[ ] <code>FilterValuePath</code> points to the expected field/property.</li>
+<li>[ ] For list filters, <code>ItemsSource</code> is provided.</li>
+<li>[ ] Row model implements <code>IStswTrackableItem</code> and/or <code>IStswDetailedItem</code> if you want full status-column features.</li>
+<li>[ ] <code>RowDetailsTemplate</code> exists if you want expandable row details.</li>
+</ul>
+<hr>
+<h2 id="6-references-in-repository">6) References in repository</h2>
+<ul>
+<li><code>StswExpress.Wpf/Controls/DataGrids/StswDataGrid.xaml.cs</code></li>
+<li><code>StswExpress.Wpf/Controls/DataGrids/StswDataGridFilterBox.xaml.cs</code></li>
+<li><code>StswExpress.Wpf/Controls/DataGrids/_columns/StswDataGridStatusColumn.xaml</code></li>
+<li><code>StswExpress.Wpf/Controls/DataGrids/_columns/StswDataGridStatusColumn.xaml.cs</code></li>
+<li><code>TestApp.Wpf/Modules/Controls/DataGrids/StswDataGrid/StswDataGridView.xaml</code></li>
+<li><code>TestApp.Wpf/Modules/Examples/Contractors/ContractorsView.xaml</code></li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Karol-Staszewski/StswExpress-docs/blob/main/articles/tutorials/data-grid.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

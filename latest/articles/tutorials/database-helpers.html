@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>StswDatabaseHelper SQL Helpers Tutorial (StswExpress.Commons) </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="StswDatabaseHelper SQL Helpers Tutorial (StswExpress.Commons) ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="stswdatabasehelper-sql-helpers-tutorial-stswexpresscommons">StswDatabaseHelper SQL Helpers Tutorial (StswExpress.Commons)</h1>
+
+<p>This tutorial shows how to <strong>correctly use SQL helpers from <code>StswDatabaseHelper</code></strong> in <code>StswExpress.Commons</code>, with practical examples focused on:</p>
+<ul>
+<li><code>Get</code></li>
+<li><code>ExecuteNonQuery</code></li>
+<li><code>ExecuteScalar</code></li>
+<li><code>TempTableInsert</code> + <code>Get</code></li>
+</ul>
+<p>The examples target SQL Server (<code>Microsoft.Data.SqlClient</code>) and are written in C#.</p>
+<hr>
+<h2 id="1-prerequisites">1. Prerequisites</h2>
+<p>Install/use:</p>
+<ul>
+<li><code>StswExpress.Commons</code></li>
+<li><code>Microsoft.Data.SqlClient</code></li>
+</ul>
+<p>Typical namespace import:</p>
+<pre><code class="lang-csharp">using Microsoft.Data.SqlClient;
+using StswExpress.Commons;
+</code></pre>
+<p>Prepare a <code>StswDatabaseModel</code> and (optionally) set a default timeout:</p>
+<pre><code class="lang-csharp">var db = new StswDatabaseModel
+{
+    Type = StswDatabaseType.MSSQL,
+    Server = &quot;localhost&quot;,
+    Database = &quot;MyDatabase&quot;,
+    UseIntegratedSecurity = true,
+    DefaultTimeout = 30
+};
+</code></pre>
+<blockquote>
+<p><code>StswDatabaseHelper</code> methods are extension methods. You can call them from:</p>
+<ul>
+<li><code>SqlConnection</code></li>
+<li><code>SqlTransaction</code></li>
+<li><code>StswDatabaseModel</code></li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="2-quick-rules-for-correct-usage">2. Quick rules for correct usage</h2>
+<ol>
+<li><strong>Always parameterize SQL</strong> (<code>@Id</code>, <code>@Status</code>, etc.) — never concatenate untrusted input.</li>
+<li><strong>Prefer <code>StswDatabaseModel</code> overloads</strong> when you want automatic connection creation and model-level default timeout.</li>
+<li><strong>Use transactions</strong> when multiple operations must succeed/fail together.</li>
+<li><strong>When using list parameters in <code>IN (...)</code>, keep lists small</strong> (helper supports up to 20 items in a single list parameter replacement).</li>
+<li><strong><code>TempTableInsert</code> creates <code>#temp</code> table automatically</strong> (it prepends <code>#</code> if needed), so keep subsequent reads in the <strong>same connection/transaction scope</strong>.</li>
+<li>If <code>StswDatabases.Config.IsEnabled == false</code>, helper methods short-circuit and return default/empty values.</li>
+</ol>
+<hr>
+<h2 id="3-get--reading-rows-into-models">3. <code>Get</code> — reading rows into models</h2>
+<h3 id="31-basic-typed-read">3.1 Basic typed read</h3>
+<pre><code class="lang-csharp">public sealed class UserDto
+{
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public bool IsActive { get; set; }
+}
+
+var users = db.Get&lt;UserDto&gt;(
+    @&quot;SELECT Id, Name, IsActive
+      FROM dbo.Users
+      WHERE IsActive = @IsActive&quot;,
+    new { IsActive = true }
+).ToList();
+</code></pre>
+<p>Use this when query columns map 1:1 to DTO properties.</p>
+<h3 id="32-dynamic-type-overload-type">3.2 Dynamic type overload (<code>Type</code>)</h3>
+<pre><code class="lang-csharp">IEnumerable&lt;object?&gt; raw = db.Get(
+    typeof(UserDto),
+    &quot;SELECT Id, Name, IsActive FROM dbo.Users WHERE Id = @Id&quot;,
+    new { Id = 10 }
+);
+
+var single = raw.Cast&lt;UserDto&gt;().FirstOrDefault();
+</code></pre>
+<p>Useful when result type is known at runtime only.</p>
+<h3 id="33-read-with-list-parameter-in">3.3 Read with list parameter (<code>IN</code>)</h3>
+<pre><code class="lang-csharp">var ids = new List&lt;int&gt; { 1, 2, 3 };
+
+var selected = db.Get&lt;UserDto&gt;(
+    &quot;SELECT Id, Name, IsActive FROM dbo.Users WHERE Id IN (@Ids)&quot;,
+    new { Ids = ids }
+).ToList();
+</code></pre>
+<p><code>StswDatabaseHelper</code> expands list values into separate SQL parameters under the hood.</p>
+<hr>
+<h2 id="4-executenonquery--insert--update--delete">4. <code>ExecuteNonQuery</code> — INSERT / UPDATE / DELETE</h2>
+<h3 id="41-single-update">4.1 Single UPDATE</h3>
+<pre><code class="lang-csharp">var affected = db.ExecuteNonQuery(
+    @&quot;UPDATE dbo.Users
+      SET IsActive = @IsActive
+      WHERE Id = @Id&quot;,
+    new { IsActive = false, Id = 10 }
+);
+
+Console.WriteLine($&quot;Rows affected: {affected}&quot;);
+</code></pre>
+<h3 id="42-batch-execution-with-multiple-parameter-objects">4.2 Batch execution with multiple parameter objects</h3>
+<p>If you pass an <code>IEnumerable&lt;object&gt;</code> as <code>parameters</code>, helper executes the same statement multiple times.</p>
+<pre><code class="lang-csharp">var batch = new[]
+{
+    new { Id = 1, IsActive = false },
+    new { Id = 2, IsActive = false },
+    new { Id = 3, IsActive = false }
+};
+
+var totalAffected = db.ExecuteNonQuery(
+    &quot;UPDATE dbo.Users SET IsActive = @IsActive WHERE Id = @Id&quot;,
+    batch
+);
+</code></pre>
+<h3 id="43-inside-transaction">4.3 Inside transaction</h3>
+<pre><code class="lang-csharp">using var conn = db.OpenedConnection();
+using var tran = conn.BeginTransaction();
+
+try
+{
+    conn.ExecuteNonQuery(
+        &quot;UPDATE dbo.Accounts SET Balance = Balance - @Amount WHERE Id = @FromId&quot;,
+        new { Amount = 100m, FromId = 1 },
+        sqlTran: tran
+    );
+
+    conn.ExecuteNonQuery(
+        &quot;UPDATE dbo.Accounts SET Balance = Balance + @Amount WHERE Id = @ToId&quot;,
+        new { Amount = 100m, ToId = 2 },
+        sqlTran: tran
+    );
+
+    tran.Commit();
+}
+catch
+{
+    tran.Rollback();
+    throw;
+}
+</code></pre>
+<hr>
+<h2 id="5-executescalar--single-value-result">5. <code>ExecuteScalar</code> — single value result</h2>
+<h3 id="51-count-rows">5.1 Count rows</h3>
+<pre><code class="lang-csharp">int activeUsers = db.ExecuteScalar&lt;int&gt;(
+    &quot;SELECT COUNT(1) FROM dbo.Users WHERE IsActive = @IsActive&quot;,
+    new { IsActive = true }
+);
+</code></pre>
+<h3 id="52-last-identity-like-read">5.2 Last identity-like read</h3>
+<pre><code class="lang-csharp">int? maxId = db.ExecuteScalar&lt;int?&gt;(
+    &quot;SELECT MAX(Id) FROM dbo.Users&quot;
+);
+</code></pre>
+<h3 id="53-existence-check">5.3 Existence check</h3>
+<pre><code class="lang-csharp">bool exists = db.ExecuteScalar&lt;int&gt;(
+    &quot;SELECT CASE WHEN EXISTS(SELECT 1 FROM dbo.Users WHERE Email = @Email) THEN 1 ELSE 0 END&quot;,
+    new { Email = &quot;john@example.com&quot; }
+) == 1;
+</code></pre>
+<hr>
+<h2 id="6-temptableinsert--get-recommended-for-larger-filter-sets">6. <code>TempTableInsert</code> + <code>Get</code> (recommended for larger filter sets)</h2>
+<p>This pattern is very useful when you need to send many IDs/rows to SQL and join them efficiently.</p>
+<h3 id="61-example-pass-selected-ids-via-temp-table-and-fetch-matching-users">6.1 Example: pass selected IDs via temp table and fetch matching users</h3>
+<pre><code class="lang-csharp">public sealed class IdRow
+{
+    public int Id { get; set; }
+}
+
+var idRows = new[]
+{
+    new IdRow { Id = 101 },
+    new IdRow { Id = 205 },
+    new IdRow { Id = 333 }
+};
+
+using var conn = db.OpenedConnection();
+using var tran = conn.BeginTransaction();
+
+try
+{
+    // Creates #FilterIds and bulk-inserts rows.
+    conn.TempTableInsert(idRows, &quot;FilterIds&quot;, sqlTran: tran);
+
+    // IMPORTANT: query in same connection/transaction scope, because #temp is session-scoped.
+    var result = conn.Get&lt;UserDto&gt;(
+        @&quot;SELECT u.Id, u.Name, u.IsActive
+          FROM dbo.Users u
+          INNER JOIN #FilterIds f ON f.Id = u.Id&quot;,
+        sqlTran: tran
+    ).ToList();
+
+    tran.Commit();
+}
+catch
+{
+    tran.Rollback();
+    throw;
+}
+</code></pre>
+<h3 id="62-dictionaryobject-based-temp-insert">6.2 Dictionary/object-based temp insert</h3>
+<p><code>TempTableInsert</code> also supports non-generic <code>IEnumerable</code> (e.g. list of dictionaries/anonymous-like merged structures), as long as columns can be inferred.</p>
+<pre><code class="lang-csharp">var rows = new List&lt;Dictionary&lt;string, object?&gt;&gt;
+{
+    new() { [&quot;Id&quot;] = 1, [&quot;Tag&quot;] = &quot;A&quot; },
+    new() { [&quot;Id&quot;] = 2, [&quot;Tag&quot;] = &quot;B&quot; }
+};
+
+using var conn = db.OpenedConnection();
+using var tran = conn.BeginTransaction();
+
+conn.TempTableInsert(rows, &quot;MyTemp&quot;, sqlTran: tran);
+
+var readBack = conn.Get&lt;TempRowDto&gt;(
+    &quot;SELECT Id, Tag FROM #MyTemp&quot;,
+    sqlTran: tran
+).ToList();
+
+tran.Commit();
+</code></pre>
+<hr>
+<h2 id="7-common-pitfalls-and-how-to-avoid-them">7. Common pitfalls and how to avoid them</h2>
+<ol>
+<li><p><strong>Trying to read <code>#temp</code> after connection closes</strong><br>
+Temp table disappears with session end. Keep <code>TempTableInsert</code> and <code>Get</code> in the same open connection (usually one transaction block).</p>
+</li>
+<li><p><strong>Too many values in one list parameter</strong><br>
+List replacement in <code>IN (@Ids)</code> has a size guard (20). For bigger datasets, prefer <code>TempTableInsert</code> and join.</p>
+</li>
+<li><p><strong>Forgetting <code>ToList()</code> before disposing scope</strong><br>
+Materialize results before leaving <code>using</code> blocks when needed later.</p>
+</li>
+<li><p><strong>Relying on execution while global DB helper is disabled</strong><br>
+If <code>StswDatabases.Config.IsEnabled</code> is off, calls return defaults/empty collections.</p>
+</li>
+<li><p><strong>Mixing different timeout expectations</strong><br>
+<code>StswDatabaseModel</code> overloads use <code>model.DefaultTimeout ?? timeout</code> behavior. Set <code>DefaultTimeout</code> explicitly for consistency.</p>
+</li>
+</ol>
+<hr>
+<h2 id="8-minimal-end-to-end-sample">8. Minimal end-to-end sample</h2>
+<pre><code class="lang-csharp">var db = new StswDatabaseModel
+{
+    Type = StswDatabaseType.MSSQL,
+    Server = &quot;localhost&quot;,
+    Database = &quot;MyDatabase&quot;,
+    UseIntegratedSecurity = true,
+    DefaultTimeout = 30
+};
+
+using var conn = db.OpenedConnection();
+using var tran = conn.BeginTransaction();
+
+try
+{
+    conn.ExecuteNonQuery(
+        &quot;UPDATE dbo.Users SET IsActive = @Flag WHERE Id = @Id&quot;,
+        new { Flag = true, Id = 42 },
+        sqlTran: tran
+    );
+
+    int total = conn.ExecuteScalar&lt;int&gt;(
+        &quot;SELECT COUNT(1) FROM dbo.Users WHERE IsActive = 1&quot;,
+        sqlTran: tran
+    );
+
+    var filter = new[] { new { Id = 42 }, new { Id = 43 } };
+    conn.TempTableInsert(filter, &quot;FilterUsers&quot;, sqlTran: tran);
+
+    var rows = conn.Get&lt;UserDto&gt;(
+        @&quot;SELECT u.Id, u.Name, u.IsActive
+          FROM dbo.Users u
+          INNER JOIN #FilterUsers f ON f.Id = u.Id&quot;,
+        sqlTran: tran
+    ).ToList();
+
+    tran.Commit();
+}
+catch
+{
+    tran.Rollback();
+    throw;
+}
+</code></pre>
+<hr>
+<h2 id="9-when-to-choose-which-method">9. When to choose which method</h2>
+<ul>
+<li>Use <strong><code>Get&lt;T&gt;</code></strong> for result sets mapped to models.</li>
+<li>Use <strong><code>ExecuteNonQuery</code></strong> for writes (insert/update/delete) where affected row count matters.</li>
+<li>Use <strong><code>ExecuteScalar&lt;T&gt;</code></strong> for one value (count, max, existence flags, computed scalar).</li>
+<li>Use <strong><code>TempTableInsert</code> + <code>Get</code></strong> for larger, structured filters or join-heavy workflows.</li>
+</ul>
+<p>If you follow these patterns, your code will stay clear, safe (parameterized), and performant for typical SQL Server operations with <code>StswExpress.Commons</code>.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Karol-Staszewski/StswExpress-docs/blob/main/articles/tutorials/database-helpers.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

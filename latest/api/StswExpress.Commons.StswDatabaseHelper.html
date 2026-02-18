@@ -1,0 +1,2894 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class StswDatabaseHelper </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class StswDatabaseHelper ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="StswExpress.Commons.StswDatabaseHelper">
+
+
+
+  <h1 id="StswExpress_Commons_StswDatabaseHelper" data-uid="StswExpress.Commons.StswDatabaseHelper" class="text-break">Class StswDatabaseHelper</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">StswDatabaseHelper</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="StswExpress.html">StswExpress</a>.<a class="xref" href="StswExpress.Commons.html">Commons</a></h6>
+  <h6><strong>Assembly</strong>: StswExpress.Commons.dll</h6>
+  <h5 id="StswExpress_Commons_StswDatabaseHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StswDatabaseHelper</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_AddParam_" data-uid="StswExpress.Commons.StswDatabaseHelper.AddParam*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_AddParam_Microsoft_Data_SqlClient_SqlParameterCollection_System_String_System_Object_System_Data_SqlDbType_System_Int32_System_Byte_" data-uid="StswExpress.Commons.StswDatabaseHelper.AddParam(Microsoft.Data.SqlClient.SqlParameterCollection,System.String,System.Object,System.Data.SqlDbType,System.Int32,System.Byte)">AddParam(SqlParameterCollection, string, object?, SqlDbType, int, byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SqlParameter AddParam(this SqlParameterCollection col, string name, object? value, SqlDbType type, int size = 0, byte precision = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlParameterCollection</span></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.data.sqldbtype">SqlDbType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td><span class="parametername">precision</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlParameter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_Microsoft_Data_SqlClient_SqlConnection_System_Collections_IEnumerable_System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert(Microsoft.Data.SqlClient.SqlConnection,System.Collections.IEnumerable,System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">BulkInsert(SqlConnection, IEnumerable, string, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BulkInsert(this SqlConnection sqlConn, IEnumerable items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_Microsoft_Data_SqlClient_SqlTransaction_System_Collections_IEnumerable_System_String_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert(Microsoft.Data.SqlClient.SqlTransaction,System.Collections.IEnumerable,System.String,System.Nullable{System.Int32})">BulkInsert(SqlTransaction, IEnumerable, string, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BulkInsert(this SqlTransaction sqlTran, IEnumerable items, string tableName, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_StswExpress_Commons_StswDatabaseModel_System_Collections_IEnumerable_System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert(StswExpress.Commons.StswDatabaseModel,System.Collections.IEnumerable,System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">BulkInsert(StswDatabaseModel, IEnumerable, string, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BulkInsert(this StswDatabaseModel model, IEnumerable items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_BulkInsert__1_Microsoft_Data_SqlClient_SqlConnection_System_Collections_Generic_IEnumerable___0__System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert``1(Microsoft.Data.SqlClient.SqlConnection,System.Collections.Generic.IEnumerable{``0},System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">BulkInsert&lt;TModel&gt;(SqlConnection, IEnumerable&lt;TModel&gt;, string, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BulkInsert&lt;TModel&gt;(this SqlConnection sqlConn, IEnumerable&lt;TModel&gt; items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_BulkInsert__1_Microsoft_Data_SqlClient_SqlTransaction_System_Collections_Generic_IEnumerable___0__System_String_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert``1(Microsoft.Data.SqlClient.SqlTransaction,System.Collections.Generic.IEnumerable{``0},System.String,System.Nullable{System.Int32})">BulkInsert&lt;TModel&gt;(SqlTransaction, IEnumerable&lt;TModel&gt;, string, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BulkInsert&lt;TModel&gt;(this SqlTransaction sqlTran, IEnumerable&lt;TModel&gt; items, string tableName, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_BulkInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_BulkInsert__1_StswExpress_Commons_StswDatabaseModel_System_Collections_Generic_IEnumerable___0__System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.BulkInsert``1(StswExpress.Commons.StswDatabaseModel,System.Collections.Generic.IEnumerable{``0},System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">BulkInsert&lt;TModel&gt;(StswDatabaseModel, IEnumerable&lt;TModel&gt;, string, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BulkInsert&lt;TModel&gt;(this StswDatabaseModel model, IEnumerable&lt;TModel&gt; items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteNonQuery_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteNonQuery*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteNonQuery_Microsoft_Data_SqlClient_SqlConnection_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteNonQuery(Microsoft.Data.SqlClient.SqlConnection,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">ExecuteNonQuery(SqlConnection, string, object?, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? ExecuteNonQuery(this SqlConnection sqlConn, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteNonQuery_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteNonQuery*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteNonQuery_Microsoft_Data_SqlClient_SqlTransaction_System_String_System_Object_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteNonQuery(Microsoft.Data.SqlClient.SqlTransaction,System.String,System.Object,System.Nullable{System.Int32})">ExecuteNonQuery(SqlTransaction, string, object?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? ExecuteNonQuery(this SqlTransaction sqlTran, string query, object? parameters = null, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteNonQuery_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteNonQuery*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteNonQuery_StswExpress_Commons_StswDatabaseModel_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteNonQuery(StswExpress.Commons.StswDatabaseModel,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">ExecuteNonQuery(StswDatabaseModel, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? ExecuteNonQuery(this StswDatabaseModel model, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteReader_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteReader*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteReader_Microsoft_Data_SqlClient_SqlConnection_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteReader(Microsoft.Data.SqlClient.SqlConnection,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">ExecuteReader(SqlConnection, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SqlDataReader ExecuteReader(this SqlConnection sqlConn, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlDataReader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteReader_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteReader*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteReader_Microsoft_Data_SqlClient_SqlTransaction_System_String_System_Object_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteReader(Microsoft.Data.SqlClient.SqlTransaction,System.String,System.Object,System.Nullable{System.Int32})">ExecuteReader(SqlTransaction, string, object?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SqlDataReader ExecuteReader(this SqlTransaction sqlTran, string query, object? parameters = null, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlDataReader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteReader_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteReader*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteReader_StswExpress_Commons_StswDatabaseModel_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteReader(StswExpress.Commons.StswDatabaseModel,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">ExecuteReader(StswDatabaseModel, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SqlDataReader ExecuteReader(this StswDatabaseModel model, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlDataReader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteScalar_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteScalar*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteScalar__1_Microsoft_Data_SqlClient_SqlConnection_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteScalar``1(Microsoft.Data.SqlClient.SqlConnection,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">ExecuteScalar&lt;TResult&gt;(SqlConnection, string, object?, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TResult ExecuteScalar&lt;TResult&gt;(this SqlConnection sqlConn, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteScalar_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteScalar*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteScalar__1_Microsoft_Data_SqlClient_SqlTransaction_System_String_System_Object_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteScalar``1(Microsoft.Data.SqlClient.SqlTransaction,System.String,System.Object,System.Nullable{System.Int32})">ExecuteScalar&lt;TResult&gt;(SqlTransaction, string, object?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TResult ExecuteScalar&lt;TResult&gt;(this SqlTransaction sqlTran, string query, object? parameters = null, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteScalar_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteScalar*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteScalar__1_StswExpress_Commons_StswDatabaseModel_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteScalar``1(StswExpress.Commons.StswDatabaseModel,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">ExecuteScalar&lt;TResult&gt;(StswDatabaseModel, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TResult ExecuteScalar&lt;TResult&gt;(this StswDatabaseModel model, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteStoredProcedure_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteStoredProcedure*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteStoredProcedure_Microsoft_Data_SqlClient_SqlConnection_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteStoredProcedure(Microsoft.Data.SqlClient.SqlConnection,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">ExecuteStoredProcedure(SqlConnection, string, object?, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? ExecuteStoredProcedure(this SqlConnection sqlConn, string procName, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">procName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteStoredProcedure_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteStoredProcedure*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteStoredProcedure_Microsoft_Data_SqlClient_SqlTransaction_System_String_System_Object_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteStoredProcedure(Microsoft.Data.SqlClient.SqlTransaction,System.String,System.Object,System.Nullable{System.Int32})">ExecuteStoredProcedure(SqlTransaction, string, object?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? ExecuteStoredProcedure(this SqlTransaction sqlTran, string procName, object? parameters = null, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">procName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ExecuteStoredProcedure_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteStoredProcedure*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ExecuteStoredProcedure_StswExpress_Commons_StswDatabaseModel_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.ExecuteStoredProcedure(StswExpress.Commons.StswDatabaseModel,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">ExecuteStoredProcedure(StswDatabaseModel, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int? ExecuteStoredProcedure(this StswDatabaseModel model, string procName, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">procName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Get_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Get_Microsoft_Data_SqlClient_SqlConnection_System_Type_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.Get(Microsoft.Data.SqlClient.SqlConnection,System.Type,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">Get(SqlConnection, Type, string, object?, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;object?&gt; Get(this SqlConnection sqlConn, Type type, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Get_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Get_Microsoft_Data_SqlClient_SqlTransaction_System_Type_System_String_System_Object_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.Get(Microsoft.Data.SqlClient.SqlTransaction,System.Type,System.String,System.Object,System.Nullable{System.Int32})">Get(SqlTransaction, Type, string, object?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;object?&gt; Get(this SqlTransaction sqlTran, Type type, string query, object? parameters = null, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Get_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Get_StswExpress_Commons_StswDatabaseModel_System_Type_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get(StswExpress.Commons.StswDatabaseModel,System.Type,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">Get(StswDatabaseModel, Type, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;object?&gt; Get(this StswDatabaseModel model, Type type, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_GetDivided_" data-uid="StswExpress.Commons.StswDatabaseHelper.GetDivided*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_GetDivided__2_Microsoft_Data_SqlClient_SqlConnection_System_String_System_Collections_Generic_KeyValuePair_System_String_System_String__System_String_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.GetDivided``2(Microsoft.Data.SqlClient.SqlConnection,System.String,System.Collections.Generic.KeyValuePair{System.String,System.String},System.String,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">GetDivided&lt;THeader, TItem&gt;(SqlConnection, string, KeyValuePair&lt;string, string?&gt;, string, string, object?, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StswPlannedChanges(StswPlannedChanges.Remove, &quot;This functionality can be achieved more efficiently using combinations of bulk insert and standard Get methods.&quot;)]
+public static IEnumerable&lt;THeader&gt; GetDivided&lt;THeader, TItem&gt;(this SqlConnection sqlConn, string query, KeyValuePair&lt;string, string?&gt; joinKeys, string injectIntoProperty, string divideFromColumn, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">joinKeys</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">injectIntoProperty</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">divideFromColumn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;THeader&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">THeader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_GetDivided_" data-uid="StswExpress.Commons.StswDatabaseHelper.GetDivided*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_GetDivided__2_Microsoft_Data_SqlClient_SqlTransaction_System_String_System_Collections_Generic_KeyValuePair_System_String_System_String__System_String_System_String_System_Object_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.GetDivided``2(Microsoft.Data.SqlClient.SqlTransaction,System.String,System.Collections.Generic.KeyValuePair{System.String,System.String},System.String,System.String,System.Object,System.Nullable{System.Int32})">GetDivided&lt;THeader, TItem&gt;(SqlTransaction, string, KeyValuePair&lt;string, string?&gt;, string, string, object?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StswPlannedChanges(StswPlannedChanges.Remove, &quot;This functionality can be achieved more efficiently using combinations of bulk insert and standard Get methods.&quot;)]
+public static IEnumerable&lt;THeader&gt; GetDivided&lt;THeader, TItem&gt;(this SqlTransaction sqlTran, string query, KeyValuePair&lt;string, string?&gt; joinKeys, string injectIntoProperty, string divideFromColumn, object? parameters = null, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">joinKeys</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">injectIntoProperty</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">divideFromColumn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;THeader&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">THeader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_GetDivided_" data-uid="StswExpress.Commons.StswDatabaseHelper.GetDivided*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_GetDivided__2_StswExpress_Commons_StswDatabaseModel_System_String_System_Collections_Generic_KeyValuePair_System_String_System_String__System_String_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.GetDivided``2(StswExpress.Commons.StswDatabaseModel,System.String,System.Collections.Generic.KeyValuePair{System.String,System.String},System.String,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">GetDivided&lt;THeader, TItem&gt;(StswDatabaseModel, string, KeyValuePair&lt;string, string?&gt;, string, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StswPlannedChanges(StswPlannedChanges.Remove, &quot;This functionality can be achieved more efficiently using combinations of bulk insert and standard Get methods.&quot;)]
+public static IEnumerable&lt;THeader&gt; GetDivided&lt;THeader, TItem&gt;(this StswDatabaseModel model, string query, KeyValuePair&lt;string, string?&gt; joinKeys, string injectIntoProperty, string divideFromColumn, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">joinKeys</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">injectIntoProperty</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">divideFromColumn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;THeader&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">THeader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_GetOpened_" data-uid="StswExpress.Commons.StswDatabaseHelper.GetOpened*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_GetOpened_Microsoft_Data_SqlClient_SqlConnection_" data-uid="StswExpress.Commons.StswDatabaseHelper.GetOpened(Microsoft.Data.SqlClient.SqlConnection)">GetOpened(SqlConnection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SqlConnection GetOpened(this SqlConnection connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Get_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Get__1_Microsoft_Data_SqlClient_SqlConnection_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.Get``1(Microsoft.Data.SqlClient.SqlConnection,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">Get&lt;TResult&gt;(SqlConnection, string, object?, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TResult&gt; Get&lt;TResult&gt;(this SqlConnection sqlConn, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Get_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Get__1_Microsoft_Data_SqlClient_SqlTransaction_System_String_System_Object_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.Get``1(Microsoft.Data.SqlClient.SqlTransaction,System.String,System.Object,System.Nullable{System.Int32})">Get&lt;TResult&gt;(SqlTransaction, string, object?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TResult&gt; Get&lt;TResult&gt;(this SqlTransaction sqlTran, string query, object? parameters = null, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Get_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Get__1_StswExpress_Commons_StswDatabaseModel_System_String_System_Object_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.Get``1(StswExpress.Commons.StswDatabaseModel,System.String,System.Object,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">Get&lt;TResult&gt;(StswDatabaseModel, string, object?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;TResult&gt; Get&lt;TResult&gt;(this StswDatabaseModel model, string query, object? parameters = null, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_LessSpaceQuery_" data-uid="StswExpress.Commons.StswDatabaseHelper.LessSpaceQuery*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_LessSpaceQuery_System_String_" data-uid="StswExpress.Commons.StswDatabaseHelper.LessSpaceQuery(System.String)">LessSpaceQuery(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LessSpaceQuery(string query)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_OpenedConnection_" data-uid="StswExpress.Commons.StswDatabaseHelper.OpenedConnection*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_OpenedConnection_StswExpress_Commons_StswDatabaseModel_" data-uid="StswExpress.Commons.StswDatabaseHelper.OpenedConnection(StswExpress.Commons.StswDatabaseModel)">OpenedConnection(StswDatabaseModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SqlConnection OpenedConnection(this StswDatabaseModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_ParametersAddList_" data-uid="StswExpress.Commons.StswDatabaseHelper.ParametersAddList*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_ParametersAddList_Microsoft_Data_SqlClient_SqlCommand_System_String_System_Collections_IList_" data-uid="StswExpress.Commons.StswDatabaseHelper.ParametersAddList(Microsoft.Data.SqlClient.SqlCommand,System.String,System.Collections.IList)">ParametersAddList(SqlCommand, string, IList?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ParametersAddList(this SqlCommand sqlCommand, string parameterName, IList? list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlCommand</span></td>
+        <td><span class="parametername">sqlCommand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_PrepareInsertQuery_" data-uid="StswExpress.Commons.StswDatabaseHelper.PrepareInsertQuery*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_PrepareInsertQuery__1_System_Collections_Generic_IEnumerable___0__System_String_System_Boolean_System_String___" data-uid="StswExpress.Commons.StswDatabaseHelper.PrepareInsertQuery``1(System.Collections.Generic.IEnumerable{``0},System.String,System.Boolean,System.String[])">PrepareInsertQuery&lt;TModel&gt;(IEnumerable&lt;TModel&gt;, string, bool, params string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PrepareInsertQuery&lt;TModel&gt;(IEnumerable&lt;TModel&gt; items, string tableName, bool withScopeIdentity, params string[] excludedPropertyNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">withScopeIdentity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">excludedPropertyNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_PrepareUpdateQuery_" data-uid="StswExpress.Commons.StswDatabaseHelper.PrepareUpdateQuery*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_PrepareUpdateQuery__1_System_Collections_Generic_IEnumerable___0__System_String_System_String_System_String___" data-uid="StswExpress.Commons.StswDatabaseHelper.PrepareUpdateQuery``1(System.Collections.Generic.IEnumerable{``0},System.String,System.String,System.String[])">PrepareUpdateQuery&lt;TModel&gt;(IEnumerable&lt;TModel&gt;, string, string, params string[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PrepareUpdateQuery&lt;TModel&gt;(IEnumerable&lt;TModel&gt; items, string tableName, string whereClause, params string[] excludedPropertyNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">whereClause</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">excludedPropertyNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Set_" data-uid="StswExpress.Commons.StswDatabaseHelper.Set*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Set__1_Microsoft_Data_SqlClient_SqlConnection_StswExpress_Commons_StswObservableCollection___0__System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_System_Nullable_System_Boolean__" data-uid="StswExpress.Commons.StswDatabaseHelper.Set``1(Microsoft.Data.SqlClient.SqlConnection,StswExpress.Commons.StswObservableCollection{``0},System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction,System.Nullable{System.Boolean})">Set&lt;TModel&gt;(SqlConnection, StswObservableCollection&lt;TModel&gt;, string, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, int?, SqlTransaction?, bool?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StswPlannedChanges(StswPlannedChanges.Remove, &quot;This method can be replaced with bulk insert operations combined with standard update/delete methods for better performance.&quot;)]
+public static void Set&lt;TModel&gt;(this SqlConnection sqlConn, StswObservableCollection&lt;TModel&gt; items, string tableName, IEnumerable&lt;string&gt;? setColumns = null, IEnumerable&lt;string&gt;? idColumns = null, int? timeout = null, SqlTransaction? sqlTran = null, bool? disposeConnection = null) where TModel : IStswTrackableItem, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswObservableCollection-1.html">StswObservableCollection</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">setColumns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">idColumns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">disposeConnection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Set_" data-uid="StswExpress.Commons.StswDatabaseHelper.Set*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Set__1_Microsoft_Data_SqlClient_SqlTransaction_StswExpress_Commons_StswObservableCollection___0__System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.Set``1(Microsoft.Data.SqlClient.SqlTransaction,StswExpress.Commons.StswObservableCollection{``0},System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32})">Set&lt;TModel&gt;(SqlTransaction, StswObservableCollection&lt;TModel&gt;, string, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StswPlannedChanges(StswPlannedChanges.Remove, &quot;This method can be replaced with bulk insert operations combined with standard update/delete methods for better performance.&quot;)]
+public static void Set&lt;TModel&gt;(this SqlTransaction sqlTran, StswObservableCollection&lt;TModel&gt; items, string tableName, IEnumerable&lt;string&gt;? setColumns = null, IEnumerable&lt;string&gt;? idColumns = null, int? timeout = null) where TModel : IStswTrackableItem, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswObservableCollection-1.html">StswObservableCollection</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">setColumns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">idColumns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_Set_" data-uid="StswExpress.Commons.StswDatabaseHelper.Set*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_Set__1_StswExpress_Commons_StswDatabaseModel_StswExpress_Commons_StswObservableCollection___0__System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.Set``1(StswExpress.Commons.StswDatabaseModel,StswExpress.Commons.StswObservableCollection{``0},System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">Set&lt;TModel&gt;(StswDatabaseModel, StswObservableCollection&lt;TModel&gt;, string, IEnumerable&lt;string&gt;?, IEnumerable&lt;string&gt;?, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StswPlannedChanges(StswPlannedChanges.Remove, &quot;This method can be replaced with bulk insert operations combined with standard update/delete methods for better performance.&quot;)]
+public static void Set&lt;TModel&gt;(this StswDatabaseModel model, StswObservableCollection&lt;TModel&gt; items, string tableName, IEnumerable&lt;string&gt;? setColumns = null, IEnumerable&lt;string&gt;? idColumns = null, int? timeout = null, SqlTransaction? sqlTran = null) where TModel : IStswTrackableItem, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswObservableCollection-1.html">StswObservableCollection</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">setColumns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">idColumns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_Microsoft_Data_SqlClient_SqlConnection_System_Collections_IEnumerable_System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert(Microsoft.Data.SqlClient.SqlConnection,System.Collections.IEnumerable,System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">TempTableInsert(SqlConnection, IEnumerable, string, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TempTableInsert(this SqlConnection sqlConn, IEnumerable items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_Microsoft_Data_SqlClient_SqlTransaction_System_Collections_IEnumerable_System_String_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert(Microsoft.Data.SqlClient.SqlTransaction,System.Collections.IEnumerable,System.String,System.Nullable{System.Int32})">TempTableInsert(SqlTransaction, IEnumerable, string, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TempTableInsert(this SqlTransaction sqlTran, IEnumerable items, string tableName, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_StswExpress_Commons_StswDatabaseModel_System_Collections_IEnumerable_System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert(StswExpress.Commons.StswDatabaseModel,System.Collections.IEnumerable,System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">TempTableInsert(StswDatabaseModel, IEnumerable, string, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TempTableInsert(this StswDatabaseModel model, IEnumerable items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert__1_Microsoft_Data_SqlClient_SqlConnection_System_Collections_Generic_IEnumerable___0__System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert``1(Microsoft.Data.SqlClient.SqlConnection,System.Collections.Generic.IEnumerable{``0},System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">TempTableInsert&lt;TModel&gt;(SqlConnection, IEnumerable&lt;TModel&gt;, string, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TempTableInsert&lt;TModel&gt;(this SqlConnection sqlConn, IEnumerable&lt;TModel&gt; items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlConnection</span></td>
+        <td><span class="parametername">sqlConn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert__1_Microsoft_Data_SqlClient_SqlTransaction_System_Collections_Generic_IEnumerable___0__System_String_System_Nullable_System_Int32__" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert``1(Microsoft.Data.SqlClient.SqlTransaction,System.Collections.Generic.IEnumerable{``0},System.String,System.Nullable{System.Int32})">TempTableInsert&lt;TModel&gt;(SqlTransaction, IEnumerable&lt;TModel&gt;, string, int?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TempTableInsert&lt;TModel&gt;(this SqlTransaction sqlTran, IEnumerable&lt;TModel&gt; items, string tableName, int? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert*"></a>
+  <h4 id="StswExpress_Commons_StswDatabaseHelper_TempTableInsert__1_StswExpress_Commons_StswDatabaseModel_System_Collections_Generic_IEnumerable___0__System_String_System_Nullable_System_Int32__Microsoft_Data_SqlClient_SqlTransaction_" data-uid="StswExpress.Commons.StswDatabaseHelper.TempTableInsert``1(StswExpress.Commons.StswDatabaseModel,System.Collections.Generic.IEnumerable{``0},System.String,System.Nullable{System.Int32},Microsoft.Data.SqlClient.SqlTransaction)">TempTableInsert&lt;TModel&gt;(StswDatabaseModel, IEnumerable&lt;TModel&gt;, string, int?, SqlTransaction?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TempTableInsert&lt;TModel&gt;(this StswDatabaseModel model, IEnumerable&lt;TModel&gt; items, string tableName, int? timeout = null, SqlTransaction? sqlTran = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="StswExpress.Commons.StswDatabaseModel.html">StswDatabaseModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TModel&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">tableName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">SqlTransaction</span></td>
+        <td><span class="parametername">sqlTran</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

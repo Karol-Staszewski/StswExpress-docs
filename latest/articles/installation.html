@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Installation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Installation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="installation">Installation</h1>
+
+<p>This guide explains how to install and configure StswExpress in your project.</p>
+<hr>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>.NET 8.0 or newer</li>
+<li>For WPF: Windows desktop project targeting <code>net8.0-windows</code></li>
+<li>For Avalonia: Avalonia project targeting .NET 8</li>
+</ul>
+<hr>
+<h2 id="nuget-installation">NuGet Installation</h2>
+<h3 id="using-net-cli">Using .NET CLI</h3>
+<p>Install the package that matches your project:</p>
+<h3 id="stswexpresscommons">StswExpress.Commons</h3>
+<p>dotnet add package StswExpress.Commons</p>
+<h3 id="stswexpresswpf">StswExpress.Wpf</h3>
+<p>dotnet add package StswExpress.Wpf</p>
+<h3 id="stswexpressavalonia">StswExpress.Avalonia</h3>
+<p>dotnet add package StswExpress.Avalonia</p>
+<hr>
+<h3 id="using-visual-studio">Using Visual Studio</h3>
+<ol>
+<li>Right-click your project.</li>
+<li>Select <strong>Manage NuGet Packages</strong>.</li>
+<li>Add the configured StswExpress package source (if using a private feed).</li>
+<li>Search for the desired package.</li>
+<li>Click <strong>Install</strong>.</li>
+</ol>
+<hr>
+<h2 id="private-package-source-commercial-version">Private Package Source (Commercial Version)</h2>
+<p>If StswExpress is distributed through a private NuGet feed:</p>
+<ol>
+<li>Open <strong>Tools → NuGet Package Manager → Package Sources</strong></li>
+<li>Add a new source:
+<ul>
+<li>Name: <code>StswExpress</code></li>
+<li>Source: <code>&lt;YOUR_PRIVATE_FEED_URL&gt;</code></li>
+</ul>
+</li>
+<li>Authenticate using your provided credentials or token.</li>
+</ol>
+<p>After adding the source, install packages as usual.</p>
+<hr>
+<h2 id="basic-usage-example">Basic Usage Example</h2>
+<p>After installation, you can reference StswExpress types directly in your code:</p>
+<pre><code class="lang-csharp">using StswExpress.Commons;
+
+public class MainViewModel : StswObservableObject
+{
+}
+</code></pre>
+<p>For WPF:</p>
+<pre><code>xmlns:se=&quot;clr-namespace:StswExpress.Wpf&quot;
+</code></pre>
+<p>Refer to <strong>Getting Started</strong> for a full walkthrough.</p>
+<hr>
+<h2 id="versioning">Versioning</h2>
+<p>StswExpress follows Semantic Versioning:</p>
+<ul>
+<li><code>MAJOR</code> – breaking changes</li>
+<li><code>MINOR</code> – new features (backwards compatible)</li>
+<li><code>PATCH</code> – bug fixes</li>
+</ul>
+<p>Pre-release versions use suffixes such as:</p>
+<ul>
+<li><code>-preview.x</code></li>
+<li><code>-rc.x</code></li>
+</ul>
+<p>Only active subscribers receive access to new releases.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Karol-Staszewski/StswExpress-docs/blob/main/articles/installation.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

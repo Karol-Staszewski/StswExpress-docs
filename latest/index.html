@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>StswExpress </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="StswExpress ">
+    
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="stswexpress">StswExpress</h1>
+
+<p><strong>StswExpress</strong> is a modular .NET library focused on building modern desktop applications faster — with consistent patterns, reusable components and a growing set of ready-to-use UI controls.</p>
+<p>It is split into independent packages, so you can adopt only what you need.</p>
+<hr>
+<h2 id="packages">Packages</h2>
+<h3 id="stswexpresscommons">StswExpress.Commons</h3>
+<p>Foundation layer with general-purpose utilities used across the ecosystem.</p>
+<p>Core utilities and infrastructure layer:</p>
+<ul>
+<li>MVVM base classes</li>
+<li>SQL helpers</li>
+<li>mapping utilities</li>
+<li>converters, extensions, comparers</li>
+<li>logging &amp; security helpers</li>
+</ul>
+<h3 id="stswexpresswpf">StswExpress.Wpf</h3>
+<p>WPF-focused controls, attached behaviors and UX building blocks.</p>
+<p>Extended WPF control ecosystem:</p>
+<ul>
+<li>advanced DataGrid</li>
+<li>dialogs, navigation, notifications</li>
+<li>charts and visualization controls</li>
+<li>theming &amp; localization</li>
+</ul>
+<h3 id="stswexpressavalonia">StswExpress.Avalonia</h3>
+<p>Avalonia UI layer aligned with the same architectural concepts.</p>
+<hr>
+<h2 id="why-stswexpress">Why StswExpress</h2>
+<ul>
+<li><strong>Practical</strong> – built out of real application needs, not “demo” widgets.</li>
+<li><strong>Consistent</strong> – naming, behavior and patterns are aligned across packages.</li>
+<li><strong>Composable</strong> – adopt Commons only, or add WPF/Avalonia on top.</li>
+<li><strong>MVVM-friendly</strong> – designed to work cleanly with typical MVVM flows.</li>
+<li><strong>Documented</strong> – API Reference is generated from XML docs, guides explain the rest.</li>
+</ul>
+<hr>
+<h1 id="-highlights">🔥 Highlights</h1>
+<h2 id="-sql-helpers-micro-orm-inspired">🧠 SQL Helpers (micro-ORM inspired)</h2>
+<p>Powerful query preparation utilities:</p>
+<ul>
+<li><code>PrepareInsertQuery</code></li>
+<li><code>PrepareUpdateQuery</code></li>
+<li>Bulk insert for <code>IEnumerable</code></li>
+<li><code>SqlParameterCollection</code> helpers</li>
+<li>Model mapping (<code>MapTo</code>)</li>
+<li><code>ToDataTable</code> and reverse mapping</li>
+</ul>
+<p>Designed to reduce boilerplate while keeping full SQL control.</p>
+<hr>
+<h2 id="-advanced-stswdatagrid-ecosystem">📊 Advanced StswDataGrid Ecosystem</h2>
+<p>A heavily extended DataGrid with:</p>
+<ul>
+<li>custom column types (<code>Check</code>, <code>Combo</code>, <code>Date</code>, <code>Decimal</code>, <code>Path</code>, <code>Status</code>, etc.)</li>
+<li>built-in filtering system</li>
+<li>dynamic XAML refresh</li>
+<li>virtualization improvements</li>
+<li>tab drag &amp; reordering</li>
+<li>automatic CollectionView handling</li>
+</ul>
+<p><img src="assets/images/datagrid.png" alt="StswDataGrid"></p>
+<hr>
+<h2 id="-charts--visualization-controls">📈 Charts &amp; Visualization Controls</h2>
+<p>Built-in visualization components:</p>
+<ul>
+<li><code>StswColumnChart</code></li>
+<li><code>StswPieChart</code></li>
+<li><code>StswLineChart</code></li>
+<li><code>StswTimeline</code></li>
+<li><code>StswRangeCalendar</code></li>
+<li>color pickers</li>
+<li>numeric controls</li>
+<li>media player &amp; GIF support</li>
+</ul>
+<p><img src="assets/images/charts.png" alt="Charts"></p>
+<hr>
+<h2 id="-qr-codes--barcodes">🔳 QR Codes &amp; Barcodes</h2>
+<p>Native support for:</p>
+<ul>
+<li><code>StswBarcode</code></li>
+<li>QR code generation</li>
+</ul>
+<p>Perfect for ERP, POS, warehouse and document workflows.</p>
+<p><img src="assets/images/qr-barcode.png" alt="QR &amp; Barcode"></p>
+<hr>
+<h2 id="-identifier-based-control-system">🧩 Identifier-Based Control System</h2>
+<p>Structured control management through identifiers:</p>
+<ul>
+<li><code>StswContentDialog</code></li>
+<li><code>StswTabControl</code></li>
+<li><code>StswNavigation</code></li>
+<li><code>StswNotifyIcon</code></li>
+<li><code>StswToaster</code></li>
+</ul>
+<p>Enables loosely coupled UI communication.</p>
+<hr>
+<h2 id="-themes--localization">🎨 Themes &amp; Localization</h2>
+<p>Out-of-the-box support for:</p>
+<ul>
+<li>Light theme</li>
+<li>Dark theme</li>
+<li>Additional themes</li>
+<li>Runtime theme switching</li>
+<li><code>StswTranslator</code></li>
+<li>Runtime language switching</li>
+</ul>
+<p><img src="assets/images/themes.png" alt="Themes"></p>
+<hr>
+<h2 id="-custom-window-system">🪟 Custom Window System</h2>
+<p><code>StswWindow</code> provides:</p>
+<ul>
+<li>fullscreen support</li>
+<li>dynamic theme switching</li>
+<li>UI scaling</li>
+<li>runtime language switching</li>
+<li>extended window controls</li>
+<li>layout enhancements</li>
+</ul>
+<p><img src="assets/images/window.png" alt="StswWindow"></p>
+<hr>
+<h2 id="-rich-utility-layer">🔁 Rich Utility Layer</h2>
+<p>Includes:</p>
+<ul>
+<li>DataTable → IEnumerable mapping</li>
+<li>deep object mapping</li>
+<li>date range utilities</li>
+<li>math helpers (<code>Lerp</code>, <code>InverseLerp</code>)</li>
+<li>logging with archive support</li>
+<li>encryption &amp; hashing helpers</li>
+<li>async command generators</li>
+</ul>
+<hr>
+<h1 id="getting-started">Getting started</h1>
+<ol>
+<li><p><strong>Install</strong> the package you need:</p>
+<ul>
+<li><code>StswExpress.Commons</code> for shared helpers</li>
+<li><code>StswExpress.Wpf</code> for WPF controls</li>
+<li><code>StswExpress.Avalonia</code> for Avalonia layer</li>
+</ul>
+</li>
+<li><p>Continue with:</p>
+</li>
+</ol>
+<ul>
+<li><strong>Guides → Getting started</strong></li>
+<li><strong>Guides → Installation</strong></li>
+<li><strong>API Reference</strong> (auto-generated)</li>
+</ul>
+<hr>
+<h2 id="installation-quick">Installation (quick)</h2>
+<blockquote>
+<p>Pick the package that matches your project.</p>
+</blockquote>
+<p><strong>Commons</strong></p>
+<p>dotnet add package StswExpress.Commons</p>
+<p><strong>WPF</strong></p>
+<p>dotnet add package StswExpress.Wpf</p>
+<p><strong>Avalonia</strong></p>
+<p>dotnet add package StswExpress.Avalonia</p>
+<hr>
+<h2 id="documentation-map">Documentation map</h2>
+<ul>
+<li><strong>Guides</strong>
+<ul>
+<li><em>Getting started</em> – quickest path to first use</li>
+<li><em>Installation</em> – packages and requirements</li>
+<li><em>Changelog</em> – what changed between versions</li>
+</ul>
+</li>
+<li><strong>API Reference</strong>
+<ul>
+<li>namespaces, classes, methods, properties (generated)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="versioning--compatibility">Versioning &amp; compatibility</h2>
+<p>StswExpress follows <strong>Semantic Versioning</strong>:</p>
+<ul>
+<li><code>MAJOR</code> – breaking changes</li>
+<li><code>MINOR</code> – new features (backwards compatible)</li>
+<li><code>PATCH</code> – bug fixes</li>
+</ul>
+<p>Pre-releases use suffixes like <code>-preview.x</code> or <code>-rc.x</code>.</p>
+<hr>
+<h2 id="support-and-feedback">Support and feedback</h2>
+<p>If something is unclear or you hit a bug:</p>
+<ul>
+<li>check <strong>Changelog</strong> for recent changes</li>
+<li>look up the type in <strong>API Reference</strong></li>
+<li>report the issue / suggestion in the repository</li>
+</ul>
+<hr>
+<h2 id="license">License</h2>
+<p>See the repository license information.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Karol-Staszewski/StswExpress-docs/blob/main/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

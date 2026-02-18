@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class StswDataGridNumberColumnBase&lt;T, TControl&gt; </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class StswDataGridNumberColumnBase&lt;T, TControl&gt; ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2">
+
+
+
+  <h1 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2" class="text-break">Class StswDataGridNumberColumnBase&lt;T, TControl&gt;</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn">DataGridColumn</a></div>
+    <div class="level2"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn">DataGridBoundColumn</a></div>
+    <div class="level3"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn">DataGridTextColumn</a></div>
+    <div class="level4"><span class="xref">StswDataGridNumberColumnBase&lt;T, TControl&gt;</span></div>
+      <div class="level5"><a class="xref" href="StswExpress.Wpf.StswDataGridDecimalColumn.html">StswDataGridDecimalColumn</a></div>
+      <div class="level5"><a class="xref" href="StswExpress.Wpf.StswDataGridDoubleColumn.html">StswDataGridDoubleColumn</a></div>
+      <div class="level5"><a class="xref" href="StswExpress.Wpf.StswDataGridIntegerColumn.html">StswDataGridIntegerColumn</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontfamilyproperty">DataGridTextColumn.FontFamilyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontsizeproperty">DataGridTextColumn.FontSizeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontstyleproperty">DataGridTextColumn.FontStyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontweightproperty">DataGridTextColumn.FontWeightProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.foregroundproperty">DataGridTextColumn.ForegroundProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.refreshcellcontent">DataGridTextColumn.RefreshCellContent(FrameworkElement, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.preparecellforedit">DataGridTextColumn.PrepareCellForEdit(FrameworkElement, RoutedEventArgs)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.cancelcelledit">DataGridTextColumn.CancelCellEdit(FrameworkElement, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.commitcelledit">DataGridTextColumn.CommitCellEdit(FrameworkElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.defaultelementstyle">DataGridTextColumn.DefaultElementStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.defaulteditingelementstyle">DataGridTextColumn.DefaultEditingElementStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontfamily">DataGridTextColumn.FontFamily</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontsize">DataGridTextColumn.FontSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontstyle">DataGridTextColumn.FontStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.fontweight">DataGridTextColumn.FontWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.foreground">DataGridTextColumn.Foreground</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.elementstyleproperty">DataGridBoundColumn.ElementStyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.editingelementstyleproperty">DataGridBoundColumn.EditingElementStyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.oncoerceisreadonly">DataGridBoundColumn.OnCoerceIsReadOnly(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.onbindingchanged">DataGridBoundColumn.OnBindingChanged(BindingBase, BindingBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.binding">DataGridBoundColumn.Binding</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.elementstyle">DataGridBoundColumn.ElementStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.editingelementstyle">DataGridBoundColumn.EditingElementStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridboundcolumn.clipboardcontentbinding">DataGridBoundColumn.ClipboardContentBinding</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headerproperty">DataGridColumn.HeaderProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headerstyleproperty">DataGridColumn.HeaderStyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headerstringformatproperty">DataGridColumn.HeaderStringFormatProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headertemplateproperty">DataGridColumn.HeaderTemplateProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headertemplateselectorproperty">DataGridColumn.HeaderTemplateSelectorProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.cellstyleproperty">DataGridColumn.CellStyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.isreadonlyproperty">DataGridColumn.IsReadOnlyProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.widthproperty">DataGridColumn.WidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.minwidthproperty">DataGridColumn.MinWidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.maxwidthproperty">DataGridColumn.MaxWidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.actualwidthproperty">DataGridColumn.ActualWidthProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.displayindexproperty">DataGridColumn.DisplayIndexProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.sortmemberpathproperty">DataGridColumn.SortMemberPathProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.canusersortproperty">DataGridColumn.CanUserSortProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.sortdirectionproperty">DataGridColumn.SortDirectionProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.isautogeneratedproperty">DataGridColumn.IsAutoGeneratedProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.isfrozenproperty">DataGridColumn.IsFrozenProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.canuserreorderproperty">DataGridColumn.CanUserReorderProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.dragindicatorstyleproperty">DataGridColumn.DragIndicatorStyleProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.canuserresizeproperty">DataGridColumn.CanUserResizeProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.visibilityproperty">DataGridColumn.VisibilityProperty</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.getcellcontent#system-windows-controls-datagridcolumn-getcellcontent(system-object)">DataGridColumn.GetCellContent(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.getcellcontent#system-windows-controls-datagridcolumn-getcellcontent(system-windows-controls-datagridrow)">DataGridColumn.GetCellContent(DataGridRow)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.notifypropertychanged">DataGridColumn.NotifyPropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.oncopyingcellclipboardcontent">DataGridColumn.OnCopyingCellClipboardContent(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.onpastingcellclipboardcontent">DataGridColumn.OnPastingCellClipboardContent(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.header">DataGridColumn.Header</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headerstyle">DataGridColumn.HeaderStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headerstringformat">DataGridColumn.HeaderStringFormat</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headertemplate">DataGridColumn.HeaderTemplate</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.headertemplateselector">DataGridColumn.HeaderTemplateSelector</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.cellstyle">DataGridColumn.CellStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.isreadonly">DataGridColumn.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.width">DataGridColumn.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.minwidth">DataGridColumn.MinWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.maxwidth">DataGridColumn.MaxWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.actualwidth">DataGridColumn.ActualWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.datagridowner">DataGridColumn.DataGridOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.displayindex">DataGridColumn.DisplayIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.sortmemberpath">DataGridColumn.SortMemberPath</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.canusersort">DataGridColumn.CanUserSort</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.sortdirection">DataGridColumn.SortDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.isautogenerated">DataGridColumn.IsAutoGenerated</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.isfrozen">DataGridColumn.IsFrozen</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.canuserreorder">DataGridColumn.CanUserReorder</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.dragindicatorstyle">DataGridColumn.DragIndicatorStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.canuserresize">DataGridColumn.CanUserResize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.visibility">DataGridColumn.Visibility</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.copyingcellclipboardcontent">DataGridColumn.CopyingCellClipboardContent</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcolumn.pastingcellclipboardcontent">DataGridColumn.PastingCellClipboardContent</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="StswExpress.html">StswExpress</a>.<a class="xref" href="StswExpress.Wpf.html">Wpf</a></h6>
+  <h6><strong>Assembly</strong>: StswExpress.Wpf.dll</h6>
+  <h5 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class StswDataGridNumberColumnBase&lt;T, TControl&gt; : DataGridTextColumn where T : struct, INumber&lt;T&gt; where TControl : StswNumberBoxBase&lt;T&gt;, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TControl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2__ctor_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.#ctor*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2__ctor" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.#ctor">StswDataGridNumberColumnBase()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StswDataGridNumberColumnBase()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_FormatProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.FormatProperty">FormatProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty FormatProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_HorizontalContentAlignmentProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.HorizontalContentAlignmentProperty">HorizontalContentAlignmentProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty HorizontalContentAlignmentProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_IncrementProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.IncrementProperty">IncrementProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty IncrementProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_MaximumProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.MaximumProperty">MaximumProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty MaximumProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_MinimumProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.MinimumProperty">MinimumProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty MinimumProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_PaddingProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.PaddingProperty">PaddingProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty PaddingProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_PlaceholderProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.PlaceholderProperty">PlaceholderProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty PlaceholderProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextAlignmentProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextAlignmentProperty">TextAlignmentProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty TextAlignmentProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextTrimmingProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextTrimmingProperty">TextTrimmingProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty TextTrimmingProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextWrappingProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextWrappingProperty">TextWrappingProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty TextWrappingProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_VerticalContentAlignmentProperty" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.VerticalContentAlignmentProperty">VerticalContentAlignmentProperty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DependencyProperty VerticalContentAlignmentProperty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DependencyProperty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Format_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Format*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Format" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Format">Format</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Format { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_HorizontalContentAlignment_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.HorizontalContentAlignment*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_HorizontalContentAlignment" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.HorizontalContentAlignment">HorizontalContentAlignment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorizontalAlignment HorizontalContentAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.horizontalalignment">HorizontalAlignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Increment_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Increment*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Increment" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Increment">Increment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Increment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Maximum_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Maximum*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Maximum" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Maximum">Maximum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Maximum { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Minimum_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Minimum*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Minimum" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Minimum">Minimum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Minimum { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Padding_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Padding*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Padding" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Padding">Padding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thickness Padding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.thickness">Thickness</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Placeholder_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Placeholder*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_Placeholder" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.Placeholder">Placeholder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Placeholder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextAlignment_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextAlignment*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextAlignment" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextAlignment">TextAlignment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextAlignment TextAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.textalignment">TextAlignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextTrimming_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextTrimming*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextTrimming" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextTrimming">TextTrimming</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextTrimming TextTrimming { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.texttrimming">TextTrimming</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextWrapping_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextWrapping*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_TextWrapping" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.TextWrapping">TextWrapping</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextWrapping TextWrapping { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.textwrapping">TextWrapping</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_VerticalContentAlignment_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.VerticalContentAlignment*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_VerticalContentAlignment" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.VerticalContentAlignment">VerticalContentAlignment</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VerticalAlignment VerticalContentAlignment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.verticalalignment">VerticalAlignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_GenerateEditingElement_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.GenerateEditingElement*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_GenerateEditingElement_System_Windows_Controls_DataGridCell_System_Object_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.GenerateEditingElement(System.Windows.Controls.DataGridCell,System.Object)">GenerateEditingElement(DataGridCell, object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override FrameworkElement GenerateEditingElement(DataGridCell cell, object dataItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcell">DataGridCell</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">dataItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.generateeditingelement">DataGridTextColumn.GenerateEditingElement(DataGridCell, object)</a></div>
+
+
+  <a id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_GenerateElement_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.GenerateElement*"></a>
+  <h4 id="StswExpress_Wpf_StswDataGridNumberColumnBase_2_GenerateElement_System_Windows_Controls_DataGridCell_System_Object_" data-uid="StswExpress.Wpf.StswDataGridNumberColumnBase`2.GenerateElement(System.Windows.Controls.DataGridCell,System.Object)">GenerateElement(DataGridCell, object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override FrameworkElement GenerateElement(DataGridCell cell, object dataItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridcell">DataGridCell</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">dataItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement">FrameworkElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.controls.datagridtextcolumn.generateelement">DataGridTextColumn.GenerateElement(DataGridCell, object)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswClone.html#StswExpress_Commons_StswClone_DeepCopy__1___0_">StswClone.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_CopyFrom__2___0___1_">StswExtensions.CopyFrom&lt;TTarget, TSource&gt;(TTarget, TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_DeepCopyWithJson__1___0_">StswExtensions.DeepCopyWithJson&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_DeepEquals__1___0___0_">StswExtensions.DeepEquals&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_In__1___0___0___">StswExtensions.In&lt;T&gt;(T, params T[])</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_In__1___0_System_Collections_Generic_IEnumerable___0__">StswExtensions.In&lt;T&gt;(T, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_IsSimilarTo__1___0___0_">StswExtensions.IsSimilarTo&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswClone.html#StswExpress_Commons_StswClone_DeepCopy_System_Object_">StswClone.DeepCopy(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_ConvertTo_System_Object_System_Type_">StswExtensions.ConvertTo(object?, Type)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_ConvertTo__1_System_Object_">StswExtensions.ConvertTo&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="StswExpress.Commons.StswExtensions.html#StswExpress_Commons_StswExtensions_GetPropertyValue_System_Object_System_String_System_Boolean_">StswExtensions.GetPropertyValue(object, string, bool)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

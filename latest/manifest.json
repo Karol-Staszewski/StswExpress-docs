@@ -1,0 +1,4164 @@
+{
+  "source_base_path": "D:/a/StswExpress-docs/StswExpress-docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.IStswDetailedItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.IStswDetailedItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.IStswDetailedItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.IStswMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.IStswMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.IStswMessage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.IStswSelectableItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.IStswSelectableItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.IStswSelectableItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.IStswTrackableItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.IStswTrackableItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.IStswTrackableItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswClone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswClone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswClone",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswComboItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswComboItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswComboItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswDatabaseHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswDatabaseHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswDatabaseHelper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswDatabaseModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswDatabaseModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswDatabaseModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswDatabaseType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswDatabaseType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswDatabaseType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswDatabases.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswDatabases.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswDatabases",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswDateRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswDateRange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswDateRange",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswFn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswFn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswFn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswFormatParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswFormatParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswFormatParser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswHttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswHttpClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswHttpClient",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswHttpErrorResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswHttpErrorResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswHttpErrorResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswInfoType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswInfoType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswInfoType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswItemState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswItemState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswItemState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswLogItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswLogItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswLogItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswMailboxModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswMailboxModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswMailboxModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswMailboxes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswMailboxes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswMailboxes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswMapping.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswMapping",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswMath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswMath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswMergePriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswMergePriority.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswMergePriority",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswMessanger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswMessanger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswMessanger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswNaturalStringComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswNaturalStringComparer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswNaturalStringComparer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswObservableCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswObservableCollection-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswObservableCollection<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswObservableDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswObservableDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswObservableDialog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswObservableDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswObservableDictionary-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswObservableDictionary<TKey, TValue>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswObservableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswObservableObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswObservableObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswObservablePropertyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswObservablePropertyAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswObservablePropertyAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswObservableValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswObservableValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswObservableValidator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswPlannedChangesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswPlannedChangesAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswPlannedChangesAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswRandomGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswRandomGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswRandomGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswRefreshBlocker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswRefreshBlocker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswRefreshBlocker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswSecurity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswSecurity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswSecurity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswSelectableItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswSelectableItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswSelectableItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswStoreBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswStoreBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswStoreBase<TModel>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswStoreChangedArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswStoreChangedArgs-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswStoreChangedArgs<TModel>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswTask-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswTask-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswTask<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswTask.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswTask",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswTaskBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswTaskBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswTaskBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswTaskManager-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswTaskManager-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswTaskManager<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswTaskManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswTaskManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswTaskManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswTaskStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswTaskStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswTaskStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.StswTreeItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.StswTreeItem-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons.StswTreeItem<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Commons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Commons.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Commons",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.IStswBoxControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.IStswBoxControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.IStswBoxControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.IStswCornerControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.IStswCornerControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.IStswCornerControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.IStswDropControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.IStswDropControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.IStswDropControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.IStswIconControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.IStswIconControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.IStswIconControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.IStswSelectionControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.IStswSelectionControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.IStswSelectionControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.IStswSubControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.IStswSubControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.IStswSubControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswAdaptiveBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswAdaptiveBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswAdaptiveBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswAdaptiveType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswAdaptiveType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswAdaptiveType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswApp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswApp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswAsyncCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswAsyncCommand-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswAsyncCommand<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswAsyncCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswAsyncCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswAsyncCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswAsyncCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswAsyncCommandBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswAsyncCommandBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswAutoLayoutMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswAutoLayoutMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswAutoLayoutMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBarcode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBarcode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBarcode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBarcodeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBarcodeType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBarcodeType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBindableParameterExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBindableParameterExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBindableParameterExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBindingProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBindingProxy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBindingProxy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBindingTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBindingTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBindingTrigger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBindingWatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBindingWatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBindingWatcher",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBoolConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBoolConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBoolConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBorder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBorder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBorder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswBoxBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswBoxBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswBoxBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCalculateConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCalculateConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCalculateConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCalculator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCalculator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCalendar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCalendar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCalendarUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCalendarUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCalendarUnit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCancellableCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCancellableCommand-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCancellableCommand<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCancellableCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCancellableCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCancellableCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswChartItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswChartItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswChartItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswChartLegend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswChartLegend.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswChartLegend",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswChartLegendItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswChartLegendItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswChartLegendItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCheckBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCheckBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCheckBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCollectionViewWrapper-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCollectionViewWrapper-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCollectionViewWrapper<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswColorBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswColorBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswColorBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswColorConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswColorConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswColorConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswColorPicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswColorPicker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswColorPicker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswColorSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswColorSelector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswColorSelector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswColumnChart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswColumnChart.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswColumnChart",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswColumnChartItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswColumnChartItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswColumnChartItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswComboBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswComboBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswComboBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswComboBoxItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswComboBoxItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswComboBoxItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCommand-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCommand<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCommandAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCommandAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCommandAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCommands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCommands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCompactibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCompactibility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCompactibility",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswCompareConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswCompareConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswCompareConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswContainsConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswContainsConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswContainsConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswContentDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswContentDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswContentDialog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswContextMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswContextMenu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswContextMenu",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGrid.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGrid",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridCheckColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridCheckColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridCheckColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridColorColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridColorColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridColorColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridComboColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridComboColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridComboColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridDateColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridDateColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridDateColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridDecimalColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridDecimalColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridDecimalColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridDoubleColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridDoubleColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridDoubleColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridFilterBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridFilterBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridFilterBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridFiltersDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridFiltersDataModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridFiltersDataModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridFiltersType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridFiltersType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridFiltersType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridIntegerColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridIntegerColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridIntegerColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridNumberColumnBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridNumberColumnBase-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridNumberColumnBase<T, TControl>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridPathColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridPathColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridPathColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridRow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridRow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridRow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridStatusColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridStatusColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridStatusColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridTextColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridTextColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridTextColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataGridTimeColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataGridTimeColumn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataGridTimeColumn",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDataPager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDataPager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDataPager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDatePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDatePicker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDatePicker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDateTimeIncrementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDateTimeIncrementType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDateTimeIncrementType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDecimalBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDecimalBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDecimalBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDialogButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDialogButtons.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDialogButtons",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDialogImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDialogImage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDialogImage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDialogSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDialogSession.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDialogSession",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDirectionView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDirectionView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDirectionView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDispatcher.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDispatcher",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDoubleBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDoubleBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDoubleBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDragBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDragBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDragBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDragBoxItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDragBoxItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDragBoxItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDropArrow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDropArrow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDropArrow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDropButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDropButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDropButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDynamicColorExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDynamicColorExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDynamicColorExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDynamicGrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDynamicGrid.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDynamicGrid",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDynamicResourceExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDynamicResourceExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDynamicResourceExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswDynamicVisibilityMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswDynamicVisibilityMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswDynamicVisibilityMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswEnumDescriptionConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswEnumDescriptionConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswEnumDescriptionConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswEnumToIntConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswEnumToIntConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswEnumToIntConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswEnumToListExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswEnumToListExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswEnumToListExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswEventToCommandExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswEventToCommandExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswEventToCommandExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswExistenceConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswExistenceConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswExistenceConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswExpander.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswExpander.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswExpander",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFileDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFileDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFileDialog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFilterAggregator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFilterAggregator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFilterAggregator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFilterMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFilterMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFilterMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFilterTags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFilterTags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFilterTags",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFilterTagsItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFilterTagsItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFilterTagsItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFlipView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFlipView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFlipView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFnUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFnUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFnUI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswFocusVisual.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswFocusVisual.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswFocusVisual",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswGeometryToPathFiguresConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswGeometryToPathFiguresConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswGeometryToPathFiguresConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswGifImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswGifImage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswGifImage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswGrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswGrid.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswGrid",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswGridSplitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswGridSplitter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswGridSplitter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswGroupBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswGroupBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswGroupBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswHasAttributeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswHasAttributeConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswHasAttributeConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswHyperlinkButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswHyperlinkButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswHyperlinkButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswIcon",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswIcons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswIcons.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswIcons",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswIfElseConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswIfElseConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswIfElseConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswIgnoreAutoGenerateColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswIgnoreAutoGenerateColumnAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswIgnoreAutoGenerateColumnAttribute",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswImage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswImage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInfoBadge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInfoBadge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInfoBadge",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInfoBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInfoBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInfoBar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInfoFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInfoFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInfoFormat",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInfoPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInfoPanel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInfoPanel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswIntegerBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswIntegerBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswIntegerBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInvertConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInvertConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInvertConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInvokeMethodExtension.InvokeMethodConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInvokeMethodExtension.InvokeMethodConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInvokeMethodExtension.InvokeMethodConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInvokeMethodExtension.ObjectValueProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInvokeMethodExtension.ObjectValueProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInvokeMethodExtension.ObjectValueProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswInvokeMethodExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswInvokeMethodExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswInvokeMethodExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswIsTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswIsTypeConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswIsTypeConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswLabel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswLabel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswLineChart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswLineChart.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswLineChart",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswLineChartItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswLineChartItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswLineChartItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswLinqConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswLinqConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswLinqConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswListBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswListBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswListBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswListBoxItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswListBoxItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswListBoxItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswListFromRangeExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswListFromRangeExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswListFromRangeExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswListView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswListView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswListViewItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswListViewItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswListViewItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMakeListExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMakeListExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMakeListExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMediaPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMediaPlayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMediaPlayer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMenu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMenu",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMenuItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMenuItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMenuItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMenuMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMenuMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMenuMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMessageDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMessageDialog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMessageDialog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMessageDialogShowOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMessageDialogShowOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMessageDialogShowOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswMultiCultureNumberConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswMultiCultureNumberConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswMultiCultureNumberConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNameOfExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNameOfExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNameOfExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNavigation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNavigation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNavigation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNavigationHistoryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNavigationHistoryItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNavigationHistoryItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNavigationItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNavigationItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNavigationItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNotifyIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNotifyIcon.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNotifyIcon",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNotifyIconTip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNotifyIconTip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNotifyIconTip",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNullToUnsetConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNullToUnsetConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNullToUnsetConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswNumberBoxBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswNumberBoxBase-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswNumberBoxBase<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswOutlinedText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswOutlinedText.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswOutlinedText",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPasswordBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPasswordBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPasswordBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPathPicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPathPicker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPathPicker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPathToIconConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPathToIconConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPathToIconConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPathTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPathTree.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPathTree",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPathType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPathType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPathType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPausableCommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPausableCommand-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPausableCommand<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPausableCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPausableCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPausableCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPercentageConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPercentageConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPercentageConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPieChart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPieChart.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPieChart",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPieChartItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPieChartItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPieChartItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPopup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPopup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPopup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswPresentationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswPresentationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswPresentationMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswProgressBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswProgressBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswProgressBar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswProgressRing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswProgressRing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswProgressRing",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswProgressState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswProgressState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswProgressState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswProgressTextMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswProgressTextMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswProgressTextMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRadioBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRadioBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRadioBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRadioButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRadioButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRadioButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRadioConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRadioConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRadioConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRangeCalendar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRangeCalendar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRangeCalendar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRatingControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRatingControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRatingControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRepeatButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRepeatButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRepeatButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswResources.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswResources",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRichBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRichBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRichBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswRichEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswRichEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswRichEditor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswScrollBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswScrollBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswScrollBar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswScrollToItemBehavior.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswScrollToItemBehavior.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswScrollToItemBehavior",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswScrollType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswScrollType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswScrollType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswScrollView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswScrollView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswScrollView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSearchBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSearchBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSearchBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSegment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSegment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSegment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSegmentItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSegmentItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSegmentItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSelectionBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSelectionBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSelectionBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSeparator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSeparator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSeparator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSettingsModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSettingsModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSettingsModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSidePanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSidePanel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSidePanel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSingleLineConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSingleLineConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSingleLineConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSlideDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSlideDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSlideDirection",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSlider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSlider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSliderMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSliderMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSliderMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSpinner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSpinner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSpinner",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSpinnerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSpinnerType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSpinnerType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSplitButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSplitButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSplitButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswStatusBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswStatusBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswStatusBar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswStatusBarItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswStatusBarItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswStatusBarItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswStepBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswStepBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswStepBar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswStepBarItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswStepBarItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswStepBarItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswStepBarItemStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswStepBarItemStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswStepBarItemStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswStepBarLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswStepBarLine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswStepBarLine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSubButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSubButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSubButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSubCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSubCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSubCheck",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSubDrop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSubDrop.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSubDrop",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSubLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSubLabel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSubLabel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSubRadio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSubRadio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSubRadio",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSubRepeater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSubRepeater.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSubRepeater",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswSubSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswSubSelector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswSubSelector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTabControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTabControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTabControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTabItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTabItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTabItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswText.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswText",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTextBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTextBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTextBox",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswThickness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswThickness.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswThickness",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswThicknessConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswThicknessConverter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswThicknessConverter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTimePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTimePicker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTimePicker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTimeSpanIncrementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTimeSpanIncrementType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTimeSpanIncrementType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTimedSwitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTimedSwitch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTimedSwitch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTimeline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTimeline.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTimeline",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTimelineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTimelineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTimelineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTimelinePanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTimelinePanel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTimelinePanel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTimerControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTimerControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTimerControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswToastItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswToastItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswToastItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswToaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswToaster.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswToaster",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswToggleButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswToggleButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswToggleButton",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswToggleSwitch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswToggleSwitch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswToggleSwitch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswToolBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswToolBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswToolBar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswToolBarTray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswToolBarTray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswToolBarTray",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswToolTip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswToolTip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswToolTip",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTranslateExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTranslateExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTranslateExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTranslator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTranslator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTranslator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTreeView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTreeView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTreeView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswTreeViewItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswTreeViewItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswTreeViewItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswWindow.MINMAXINFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswWindow.MINMAXINFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswWindow.MINMAXINFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswWindow.MONITORINFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswWindow.MONITORINFO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswWindow.MONITORINFO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswWindow.POINT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswWindow.POINT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswWindow.POINT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswWindow.RECT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswWindow.RECT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswWindow.RECT",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswWindow",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswWindowBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswWindowBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswWindowBar",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.StswZoomControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.StswZoomControl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf.StswZoomControl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/StswExpress.Wpf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/StswExpress.Wpf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "StswExpress.Wpf",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelog/1.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog/1.0.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelog/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/changelog/legacy-free.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/changelog/legacy-free.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/installation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/pricing.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/pricing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/data-grid.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/data-grid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/database-helpers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/database-helpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/identifier-controls.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/identifier-controls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/tutorials/startup.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/tutorials/startup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

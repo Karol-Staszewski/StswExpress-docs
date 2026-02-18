@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>StswExpress.Wpf Startup Tutorial </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="StswExpress.Wpf Startup Tutorial ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="stswexpresswpf-startup-tutorial">StswExpress.Wpf Startup Tutorial</h1>
+
+<p>This tutorial shows how to correctly bootstrap a new WPF application with <strong>StswExpress.Wpf</strong>, based on the setup used in <code>TestApp.Wpf</code> (<code>App.xaml</code>, <code>App.xaml.cs</code>, <code>MainWindow.xaml</code>, <code>MainWindow.xaml.cs</code>).</p>
+<h2 id="1-install-required-nuget-packages">1) Install required NuGet packages</h2>
+<p>At minimum, add:</p>
+<ul>
+<li><code>StswExpress.Wpf</code></li>
+<li><code>StswExpress.Commons</code></li>
+</ul>
+<p>You can install them with:</p>
+<pre><code class="lang-bash">dotnet add package StswExpress.Wpf
+dotnet add package StswExpress.Commons
+</code></pre>
+<hr>
+<h2 id="2-configure-appxaml-to-use-stswapp">2) Configure <code>App.xaml</code> to use <code>StswApp</code></h2>
+<p>Replace the default <code>&lt;Application ...&gt;</code> root with <code>&lt;se:StswApp ...&gt;</code>, and merge <code>StswResources</code>.</p>
+<pre><code class="lang-xml">&lt;se:StswApp x:Class=&quot;YourApp.Wpf.App&quot;
+            xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+            xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+            xmlns:se=&quot;clr-namespace:StswExpress.Wpf;assembly=StswExpress.Wpf&quot;
+            AllowMultipleInstances=&quot;False&quot;
+            StartupUri=&quot;Modules/MainWindow.xaml&quot;
+            DispatcherUnhandledException=&quot;Application_DispatcherUnhandledException&quot;&gt;
+    &lt;se:StswApp.Resources&gt;
+        &lt;ResourceDictionary&gt;
+            &lt;ResourceDictionary.MergedDictionaries&gt;
+                &lt;se:StswResources/&gt;
+            &lt;/ResourceDictionary.MergedDictionaries&gt;
+        &lt;/ResourceDictionary&gt;
+    &lt;/se:StswApp.Resources&gt;
+&lt;/se:StswApp&gt;
+</code></pre>
+<h3 id="why-this-matters">Why this matters</h3>
+<ul>
+<li><code>StswApp</code> enables StswExpress-specific startup behavior.</li>
+<li><code>StswResources</code> loads themes, styles, brushes, and shared control resources.</li>
+<li><code>AllowMultipleInstances=&quot;False&quot;</code> helps prevent duplicate app instances.</li>
+<li><code>DispatcherUnhandledException</code> gives you one central place for runtime exception handling.</li>
+</ul>
+<hr>
+<h2 id="3-configure-appxamlcs-to-inherit-from-stswapp">3) Configure <code>App.xaml.cs</code> to inherit from <code>StswApp</code></h2>
+<p>Create an app class derived from <code>StswApp</code> and register global startup logic.</p>
+<pre><code class="lang-csharp">global using StswExpress.Commons;
+global using StswExpress.Wpf;
+using System;
+using System.IO;
+using System.Windows;
+using System.Windows.Input;
+using System.Windows.Threading;
+
+namespace YourApp.Wpf;
+
+public partial class App : StswApp
+{
+    public static ICommand HelpCommand { get; } =
+        new RoutedUICommand(&quot;Help&quot;, &quot;Help&quot;, typeof(StswWindow), [new KeyGesture(Key.F1)]);
+
+    protected override void OnStartup(StartupEventArgs e)
+    {
+        base.OnStartup(e);
+
+        CommandManager.RegisterClassCommandBinding(
+            typeof(StswWindow),
+            new CommandBinding(HelpCommand, (_, _) =&gt; OpenHelp()));
+
+        // Optional examples:
+        // StswSecurity.Key = &quot;myOwnStswHashKey&quot;;
+        // StswTranslator.AvailableLanguages = new() { { &quot;en&quot;, &quot;English&quot; } };
+        // StswTranslator.CurrentLanguage = &quot;en&quot;;
+        // StswResources.AvailableThemes = [&quot;Light&quot;, &quot;Dark&quot;];
+        // StswResources.CurrentTheme = &quot;Light&quot;;
+    }
+
+    private async void Application_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e)
+    {
+        await StswDispatcher.RunWhenUiIsReadyAsync(() =&gt;
+            StswMessageDialog.Show(
+                e.Exception,
+                &quot;Unhandled exception&quot;,
+                options: new StswMessageDialogShowOptions { SaveLog = true }));
+
+        e.Handled = true;
+    }
+
+    private static async void OpenHelp()
+    {
+        if (Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $@&quot;Resources\\help_{StswApp.Settings.Language ?? &quot;en&quot;}.pdf&quot;)
+            is string helpPath &amp;&amp; File.Exists(helpPath))
+        {
+            StswFn.OpenPath(helpPath);
+        }
+        else if (Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @&quot;Resources\\help_en.pdf&quot;)
+                 is string helpPathEN &amp;&amp; File.Exists(helpPathEN))
+        {
+            StswFn.OpenPath(helpPathEN);
+        }
+        else
+        {
+            await StswMessageDialog.Show(
+                &quot;No help file is available!&quot;,
+                &quot;Information&quot;,
+                null,
+                StswDialogButtons.OK,
+                StswDialogImage.Information,
+                options: new StswMessageDialogShowOptions { SaveLog = false });
+        }
+    }
+}
+</code></pre>
+<h3 id="what-to-keep-from-this-pattern">What to keep from this pattern</h3>
+<ul>
+<li>Use <code>StswApp</code> as your app base class.</li>
+<li>Keep global commands in <code>App</code> when they should work everywhere.</li>
+<li>Handle unhandled exceptions and show user-friendly dialogs.</li>
+<li>Optionally define theme/language/security defaults at startup.</li>
+</ul>
+<hr>
+<h2 id="4-use-stswwindow-as-your-main-window">4) Use <code>StswWindow</code> as your main window</h2>
+<p>In your <code>MainWindow.xaml</code>, inherit from <code>StswWindow</code> instead of standard <code>Window</code>.</p>
+<pre><code class="lang-xml">&lt;se:StswWindow x:Class=&quot;YourApp.Wpf.MainWindow&quot;
+               xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+               xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+               xmlns:se=&quot;clr-namespace:StswExpress.Wpf;assembly=StswExpress.Wpf&quot;
+               xmlns:local=&quot;clr-namespace:YourApp.Wpf&quot;
+               Title=&quot;My App&quot; Height=&quot;600&quot; Width=&quot;1000&quot; WindowStartupLocation=&quot;CenterScreen&quot;&gt;
+    &lt;se:StswWindow.Components&gt;
+        &lt;se:StswButton Command=&quot;{x:Static local:App.HelpCommand}&quot; DockPanel.Dock=&quot;Right&quot; Style=&quot;{DynamicResource StswWindowButtonStyle}&quot;&gt;
+            &lt;se:StswOutlinedText Text=&quot;?&quot;/&gt;
+        &lt;/se:StswButton&gt;
+    &lt;/se:StswWindow.Components&gt;
+
+    &lt;Grid&gt;
+        &lt;se:StswText Text=&quot;Welcome to StswExpress.Wpf&quot; HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Center&quot;/&gt;
+    &lt;/Grid&gt;
+&lt;/se:StswWindow&gt;
+</code></pre>
+<h3 id="why-this-matters-1">Why this matters</h3>
+<ul>
+<li><code>StswWindow</code> provides built-in styling and window-level StswExpress integrations.</li>
+<li><code>StswWindow.Components</code> is a convenient place for custom window-bar actions.</li>
+</ul>
+<hr>
+<h2 id="5-keep-mainwindowxamlcs-simple">5) Keep <code>MainWindow.xaml.cs</code> simple</h2>
+<pre><code class="lang-csharp">namespace YourApp.Wpf;
+
+public partial class MainWindow : StswWindow
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+    }
+}
+</code></pre>
+<p>This is enough for startup. Add view logic or MVVM bindings later.</p>
+<hr>
+<h2 id="6-recommended-startup-checklist">6) Recommended startup checklist</h2>
+<p>When creating a fresh app, verify all points below:</p>
+<ul>
+<li>[ ] <code>App.xaml</code> root is <code>se:StswApp</code>.</li>
+<li>[ ] <code>se:StswResources</code> is merged in app resources.</li>
+<li>[ ] <code>App</code> class inherits from <code>StswApp</code>.</li>
+<li>[ ] <code>MainWindow</code> root is <code>se:StswWindow</code>.</li>
+<li>[ ] <code>MainWindow</code> code-behind inherits from <code>StswWindow</code>.</li>
+<li>[ ] <code>StartupUri</code> points to the correct XAML file.</li>
+<li>[ ] Optional: global command(s), exception handler, theme/language defaults are configured.</li>
+</ul>
+<hr>
+<h2 id="7-common-mistakes">7) Common mistakes</h2>
+<ol>
+<li><p><strong>Keeping <code>&lt;Application&gt;</code> instead of <code>&lt;se:StswApp&gt;</code></strong></p>
+<ul>
+<li>Result: missing StswExpress app-level functionality.</li>
+</ul>
+</li>
+<li><p><strong>Not merging <code>&lt;se:StswResources/&gt;</code></strong></p>
+<ul>
+<li>Result: styles/resources not applied correctly.</li>
+</ul>
+</li>
+<li><p><strong>Using <code>Window</code> instead of <code>StswWindow</code></strong></p>
+<ul>
+<li>Result: loss of StswExpress window features and visual consistency.</li>
+</ul>
+</li>
+<li><p><strong>Incorrect <code>StartupUri</code></strong></p>
+<ul>
+<li>Result: app starts with runtime XAML loading errors.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="8-minimal-working-startup-structure">8) Minimal working startup structure</h2>
+<pre><code class="lang-text">YourApp.Wpf/
+├─ App.xaml
+├─ App.xaml.cs
+└─ Modules/
+   ├─ MainWindow.xaml
+   └─ MainWindow.xaml.cs
+</code></pre>
+<p>If you follow this structure and configuration, your StswExpress.Wpf app should start correctly with theme resources, a custom window base, and centralized startup behavior.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Karol-Staszewski/StswExpress-docs/blob/main/articles/tutorials/startup.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

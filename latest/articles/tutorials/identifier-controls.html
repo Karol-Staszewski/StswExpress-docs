@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Identifier-Based Controls in StswExpress (WPF) </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Identifier-Based Controls in StswExpress (WPF) ">
+    
+    
+      <link rel="shortcut icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../../styles/docfx.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta property="docfx:navrel" content="../../toc.html">
+      <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="identifier-based-controls-in-stswexpress-wpf">Identifier-Based Controls in StswExpress (WPF)</h1>
+
+<blockquote>
+<p>Practical guide for correctly wiring controls that depend on <code>Identifier</code>.</p>
+</blockquote>
+<h2 id="screenshot-placeholders-add-your-images-here">Screenshot placeholders (add your images here)</h2>
+<h3 id="configured-navigation-example">Configured Navigation example</h3>
+<p><img src="./images/stswnavigation-configured.png" alt="Configured StswNavigation - add your screenshot path here"></p>
+<h3 id="configured-dialog-host-example">Configured Dialog host example</h3>
+<p><img src="./images/stswcontentdialog-configured.png" alt="Configured StswContentDialog - add your screenshot path here"></p>
+<hr>
+<h2 id="why-identifier-matters">Why <code>Identifier</code> matters</h2>
+<p>Many StswExpress controls expose an <code>Identifier</code> property and static methods like <code>Show(...)</code>, <code>Close(...)</code>, <code>Navigate(...)</code>, or <code>ShowBalloonTip(...)</code>. Those static APIs locate the target control instance by matching the <code>Identifier</code> value.</p>
+<p>If the identifier is missing, wrong, or duplicated, the call may fail (or match the wrong instance).</p>
+<hr>
+<h2 id="core-rule">Core rule</h2>
+<p><strong>Treat <code>Identifier</code> as a unique routing key for a specific host control instance.</strong></p>
+<p>Recommended conventions:</p>
+<ul>
+<li>Use predictable, explicit values (e.g. <code>&quot;ShellNavigation&quot;</code>, <code>&quot;MainDialogHost&quot;</code>, <code>&quot;TrayIcon.Main&quot;</code>).</li>
+<li>Keep identifiers unique per window/scope.</li>
+<li>When you have multiple windows of the same type, include context in names:
+<ul>
+<li><code>&quot;CustomerWindow.Navigation&quot;</code></li>
+<li><code>&quot;AdminWindow.Navigation&quot;</code></li>
+</ul>
+</li>
+<li>Prefer constants or <code>nameof(...)</code>-based patterns in C# to avoid typo bugs.</li>
+</ul>
+<hr>
+<h2 id="quick-map-controls-that-use-identifier">Quick map: controls that use <code>Identifier</code></h2>
+<p>Main controls from your list:</p>
+<ul>
+<li><code>StswContentDialog</code></li>
+<li><code>StswMessageDialog</code></li>
+<li><code>StswNavigation</code></li>
+<li><code>StswTabControl</code></li>
+<li><code>StswNotifyIcon</code></li>
+</ul>
+<p>Other frequently used Identifier-based controls/helpers in the library:</p>
+<ul>
+<li><code>StswToaster</code></li>
+<li><code>StswFileDialog</code></li>
+<li>internal <code>StswConfig</code> helper (used by config presentation patterns)</li>
+</ul>
+<hr>
+<h2 id="1-stswcontentdialog-dialog-host">1) <code>StswContentDialog</code> (dialog host)</h2>
+<p><code>StswContentDialog</code> is usually a host placed in your visual tree, then addressed through static methods:</p>
+<ul>
+<li><code>StswContentDialog.Show(content, dialogIdentifier)</code></li>
+<li><code>StswContentDialog.Close(dialogIdentifier[, parameter])</code></li>
+</ul>
+<h3 id="xaml-host">XAML host</h3>
+<pre><code class="lang-xml">&lt;se:StswContentDialog Identifier=&quot;MainDialogHost&quot; /&gt;
+</code></pre>
+<h3 id="show-from-code-behind--vm-service-layer">Show from code-behind / VM service layer</h3>
+<pre><code class="lang-csharp">await StswContentDialog.Show(new MyDialogContent(), &quot;MainDialogHost&quot;);
+</code></pre>
+<h3 id="good-practices">Good practices</h3>
+<ul>
+<li>Place the host where it is always available for the scope you need.</li>
+<li>Use one host per logical area/window unless you explicitly need multiple hosts.</li>
+<li>If you use multiple hosts, document which workflow uses which identifier.</li>
+</ul>
+<hr>
+<h2 id="2-stswmessagedialog-message-box-like-dialog">2) <code>StswMessageDialog</code> (message box-like dialog)</h2>
+<p><code>StswMessageDialog</code> uses the same idea: it resolves where to display by <code>Identifier</code>.</p>
+<h3 id="typical-usage">Typical usage</h3>
+<pre><code class="lang-csharp">var result = await StswMessageDialog.Show(
+    new StswMessageDialog
+    {
+        Identifier = &quot;MainDialogHost&quot;,
+        Title = &quot;Delete item&quot;,
+        Message = &quot;Are you sure?&quot;
+    });
+</code></pre>
+<h3 id="best-practices">Best practices</h3>
+<ul>
+<li>Reuse the same dialog host identifier across your app-level message dialogs.</li>
+<li>Centralize message-dialog calls in a service to keep identifiers consistent.</li>
+</ul>
+<hr>
+<h2 id="3-stswnavigation-navigate-by-identifier">3) <code>StswNavigation</code> (navigate by identifier)</h2>
+<p><code>StswNavigation</code> supports static navigation targeting a specific instance by <code>Identifier</code>.</p>
+<h3 id="xaml">XAML</h3>
+<pre><code class="lang-xml">&lt;se:StswNavigation Identifier=&quot;ShellNavigation&quot; /&gt;
+</code></pre>
+<h3 id="code">Code</h3>
+<pre><code class="lang-csharp">StswNavigation.Navigate(&quot;ShellNavigation&quot;, typeof(DashboardView));
+</code></pre>
+<h3 id="best-practices-1">Best practices</h3>
+<ul>
+<li>Assign one stable identifier to your shell navigation control.</li>
+<li>For multi-shell/multi-window apps, namespace identifiers by shell.</li>
+<li>Keep navigation calls in one place (NavigationService) to avoid scattered string literals.</li>
+</ul>
+<hr>
+<h2 id="4-stswtabcontrol-tab-operations-by-identifier">4) <code>StswTabControl</code> (tab operations by identifier)</h2>
+<p><code>StswTabControl</code> can be targeted via static operations that search by identifier.</p>
+<h3 id="xaml-1">XAML</h3>
+<pre><code class="lang-xml">&lt;se:StswTabControl Identifier=&quot;MainTabs&quot; /&gt;
+</code></pre>
+<h3 id="example-intent">Example intent</h3>
+<pre><code class="lang-csharp">// Pseudocode-style example: call the static API that targets MainTabs
+// StswTabControl.&lt;Operation&gt;(&quot;MainTabs&quot;, ...);
+</code></pre>
+<h3 id="best-practices-2">Best practices</h3>
+<ul>
+<li>Keep tab-related operations behind an abstraction (e.g., <code>ITabWorkspaceService</code>).</li>
+<li>Use one identifier per tab workspace (main tabs, tool tabs, report tabs, etc.).</li>
+</ul>
+<hr>
+<h2 id="5-stswnotifyicon-tray-icon-instance-lookup">5) <code>StswNotifyIcon</code> (tray icon instance lookup)</h2>
+<p><code>StswNotifyIcon</code> also supports identifier-based static operations (e.g., showing notifications on a specific tray icon instance).</p>
+<h3 id="xaml-2">XAML</h3>
+<pre><code class="lang-xml">&lt;se:StswNotifyIcon Identifier=&quot;TrayIcon.Main&quot; /&gt;
+</code></pre>
+<h3 id="example">Example</h3>
+<pre><code class="lang-csharp">StswNotifyIcon.ShowBalloonTip(
+    &quot;TrayIcon.Main&quot;,
+    &quot;Sync complete&quot;,
+    &quot;All files are up to date.&quot;);
+</code></pre>
+<h3 id="best-practices-3">Best practices</h3>
+<ul>
+<li>Always set explicit identifiers if there can be more than one notify icon.</li>
+<li>Keep tray notification calls centralized.</li>
+</ul>
+<hr>
+<h2 id="additional-controls-worth-remembering">Additional controls worth remembering</h2>
+<h2 id="stswtoaster"><code>StswToaster</code></h2>
+<p>If you use multiple toaster regions, give each a unique identifier and target the correct one in static calls.</p>
+<h2 id="stswfiledialog"><code>StswFileDialog</code></h2>
+<p>When shown through framework helpers, the identifier determines which host instance is used.</p>
+<hr>
+<h2 id="common-mistakes-and-how-to-avoid-them">Common mistakes and how to avoid them</h2>
+<ol>
+<li><p><strong>No <code>Identifier</code> set</strong></p>
+<ul>
+<li>Symptom: static call fails to find control instance.</li>
+<li>Fix: set identifier in XAML and verify control is loaded.</li>
+</ul>
+</li>
+<li><p><strong>Duplicate identifiers</strong></p>
+<ul>
+<li>Symptom: ambiguous match / runtime exception.</li>
+<li>Fix: enforce unique naming scheme.</li>
+</ul>
+</li>
+<li><p><strong>Typo in string literal</strong></p>
+<ul>
+<li>Symptom: “not found” despite control existing.</li>
+<li>Fix: use constants (<code>public const string MainDialogHost = ...</code>).</li>
+</ul>
+</li>
+<li><p><strong>Wrong scope/window</strong></p>
+<ul>
+<li>Symptom: call hits another window or none.</li>
+<li>Fix: include window/module context in identifier names.</li>
+</ul>
+</li>
+<li><p><strong>Calling too early (before load)</strong></p>
+<ul>
+<li>Symptom: control instance not available yet.</li>
+<li>Fix: call after UI initialization, or defer via dispatcher/app lifecycle.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="recommended-implementation-pattern">Recommended implementation pattern</h2>
+<p>Create a central static class for identifiers:</p>
+<pre><code class="lang-csharp">public static class UiIdentifiers
+{
+    public const string MainDialogHost = &quot;MainDialogHost&quot;;
+    public const string ShellNavigation = &quot;ShellNavigation&quot;;
+    public const string MainTabs = &quot;MainTabs&quot;;
+    public const string MainTrayIcon = &quot;TrayIcon.Main&quot;;
+}
+</code></pre>
+<p>Then use it consistently:</p>
+<pre><code class="lang-xml">&lt;se:StswContentDialog Identifier=&quot;{x:Static local:UiIdentifiers.MainDialogHost}&quot; /&gt;
+&lt;se:StswNavigation Identifier=&quot;{x:Static local:UiIdentifiers.ShellNavigation}&quot; /&gt;
+&lt;se:StswTabControl Identifier=&quot;{x:Static local:UiIdentifiers.MainTabs}&quot; /&gt;
+&lt;se:StswNotifyIcon Identifier=&quot;{x:Static local:UiIdentifiers.MainTrayIcon}&quot; /&gt;
+</code></pre>
+<pre><code class="lang-csharp">await StswContentDialog.Show(new MyDialogContent(), UiIdentifiers.MainDialogHost);
+StswNavigation.Navigate(UiIdentifiers.ShellNavigation, typeof(HomeView));
+</code></pre>
+<hr>
+<h2 id="minimal-checklist">Minimal checklist</h2>
+<p>Before shipping, confirm:</p>
+<ul>
+<li>[ ] Every Identifier-based control has an explicit <code>Identifier</code>.</li>
+<li>[ ] Identifiers are unique in the relevant runtime scope.</li>
+<li>[ ] Calls to static APIs use shared constants (not random literals).</li>
+<li>[ ] Multi-window scenarios have scoped naming.</li>
+<li>[ ] The targeted control is loaded before static calls are made.</li>
+</ul>
+<hr>
+<h2 id="summary">Summary</h2>
+<p><code>Identifier</code> in StswExpress is your addressing mechanism for UI hosts and services exposed via static APIs. Consistent naming, uniqueness, and centralized usage patterns eliminate most runtime errors and make dialog/navigation workflows predictable.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Karol-Staszewski/StswExpress-docs/blob/main/articles/tutorials/identifier-controls.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

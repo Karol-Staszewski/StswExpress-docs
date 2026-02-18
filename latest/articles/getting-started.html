@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Getting Started </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Getting Started ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<p>This guide walks you through setting up StswExpress in a minimal WPF project and using a basic component.</p>
+<p>By the end, you will:</p>
+<ul>
+<li>Install a StswExpress package</li>
+<li>Create a simple ViewModel</li>
+<li>Use a StswExpress control in XAML</li>
+</ul>
+<hr>
+<h2 id="1-choose-a-package">1. Choose a Package</h2>
+<p>Select the package that matches your project type:</p>
+<ul>
+<li><strong>StswExpress.Commons</strong> – infrastructure and helpers</li>
+<li><strong>StswExpress.Wpf</strong> – WPF controls and UI extensions</li>
+<li><strong>StswExpress.Avalonia</strong> – Avalonia UI components</li>
+</ul>
+<p>For this example, we’ll use <strong>StswExpress.Wpf</strong>.</p>
+<hr>
+<h2 id="2-install-the-package">2. Install the Package</h2>
+<p>Using .NET CLI:
+<code>dotnet add package StswExpress.Wpf</code></p>
+<p>Or install via Visual Studio → Manage NuGet Packages.</p>
+<hr>
+<h2 id="3-create-a-basic-viewmodel">3. Create a Basic ViewModel</h2>
+<p>Create a ViewModel using the Commons base class:</p>
+<pre><code class="lang-csharp">using StswExpress.Commons;
+
+public class MainViewModel : StswObservableObject
+{
+    private string _title = &quot;Hello from StswExpress&quot;;
+
+    public string Title
+    {
+        get =&gt; _title;
+        set =&gt; SetProperty(ref _title, value);
+    }
+}
+</code></pre>
+<h2 id="4-use-stswexpress-in-xaml">4. Use StswExpress in XAML</h2>
+<p>Add the namespace:</p>
+<pre><code>xmlns:se=&quot;clr-namespace:StswExpress.Wpf&quot;
+</code></pre>
+<p>Example usage inside a Window:</p>
+<pre><code>&lt;se:StswWindow&gt;
+    &lt;StackPanel Margin=&quot;20&quot;&gt;
+        &lt;TextBlock Text=&quot;{Binding Title}&quot; FontSize=&quot;20&quot;/&gt;
+        &lt;se:StswButton Content=&quot;Click me&quot;/&gt;
+    &lt;/StackPanel&gt;
+&lt;/se:StswWindow&gt;
+</code></pre>
+<p>This demonstrates:</p>
+<ul>
+<li>Custom window system</li>
+<li>Styled controls</li>
+<li>MVVM-friendly binding</li>
+</ul>
+<h2 id="5-explore-advanced-components">5. Explore Advanced Components</h2>
+<p>Now you can explore:</p>
+<ul>
+<li><code>StswDataGrid</code> with filtering support</li>
+<li>Charts and visual controls</li>
+<li>Dialog and navigation system</li>
+<li>Theming and localization</li>
+<li>SQL helper utilities</li>
+</ul>
+<p>Refer to the API Reference for full type documentation.</p>
+<h2 id="6-next-steps">6. Next Steps</h2>
+<ul>
+<li>Read Installation for private feed setup</li>
+<li>Review Changelog for recent updates</li>
+<li>Explore the full control ecosystem in API Reference</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Karol-Staszewski/StswExpress-docs/blob/main/articles/getting-started.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
