@@ -4070,16 +4070,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "articles/pricing.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/pricing.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
